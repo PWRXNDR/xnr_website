@@ -236,6 +236,9 @@ ul li a:hover::before {
         ul li a {
             font-size: 0.9em;
         }
+    .profile-image {
+        max-width: 280px;
+    }
 }
 .menu {
     transition: all 0.3s; /* Smooth transition for sticky effect */
