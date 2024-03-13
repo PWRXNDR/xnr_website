@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>X&R Contact</title>
+    <link rel="icon" href="Icons\favicon_io (1)\favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./style_contact.css">
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/swiper@7/swiper-bundle.min.css" />
+</head>
+<body>
+    <div id="vanta-canvas" class="vanta-section"></div>
+    <div id="particles-js"></div>
+    <!-- Logo -->
+    <button class='glowing-btn'><span class='glowing-txt'>X<span class='faulty-letter'>&</span>R</span></button>
+    <nav class="menu">
+        <ul>
+            <li style="--clr:#B9EAF8">
+                <a href="index.html" data-text="&nbsp;About">&nbsp;About&nbsp;</a>
+            </li>
+            <li style="--clr:#67C5F8">
+                <a href="projects.html" data-text="&nbsp;Projects">&nbsp;Projects&nbsp;</a>
+            </li>
+            <li style="--clr:#631FF6">
+                <a href="services.html" data-text="&nbsp;Services">&nbsp;Services&nbsp;</a>
+            </li>
+            <li style="--clr:#0EC1F4">
+                <a href="blog.html" data-text="&nbsp;Blog">&nbsp;Blog&nbsp;</a>
+            </li>
+            <li style="--clr:#06F77D">
+                <a href="contact.html" data-text="&nbsp;Contact">&nbsp;Contact&nbsp;</a>
+            </li>
+        </ul>
+    </nav>
+    <div id="particles-js-2"></div>
+    <div id="vanta-canvas-2" class="vanta-section"></div>
+    <div class="contact-text">
+        <h1>Contact Us!</h1>
+        <p>Feel free to reach out via email or through our social media channels.</p>
+    </div>
+    <div class="social-media">
+        <a href="https://github.com/PWRXNDR" target="_blank" class="GitHub">
+            <img src="Icons\icons8-github-48.png" alt="GitHub">
+        </a>
+        <a href="https://www.linkedin.com/in/aleksandr-dubranov-394481281/" target="_blank" class="LinkedIn">
+            <img src="Icons\icons8-linkedin-48.png" alt="LinkedIn">
+        </a>
+        <a href="https://medium.com/@pwrxndr" target="_blank" class="Medium">
+            <img src="Icons\icons8-medium-48.png" alt="Medium">
+        </a>
+        <a href="https://twitter.com/pwrxndr" target="_blank" class="Twitter">
+            <img src="Icons\icons8-twitter-48.png" alt="Twitter">
+        </a>
+        <a href="https://www.instagram.com/pwr_xndr/?source=about_page-------------------------------------" target="_blank" class="Insta">
+            <img src="Icons\icons8-instagram-48.png" alt="Instagram">
+        </a>
+    </div>
+    <div class="contact-container">
+        <div class="contact-info">
+            <!-- You can replace this with customer testimonials, a quote, or a graphic -->
+            <div class="email-container">
+                <h3 class="email">Email</h3>
+                <h4 class="email2">pwrxndr@gmail.com</h4>
+            </div>
+            <div class="phone-container">
+                <h3 class="call">Call</h3>
+                <h4 class="call2">+36-20-413-8449</h4>
+            </div>
+            <!-- Other content you want to include instead of a map -->
+        </div>
+        <form action="https://formspree.io/f/xqkrldan" method="POST" class="contact-form">
+            <div class="form-group">
+                <input type="text" name="name" placeholder="Your Name" required>
+            </div>
+            <div class="form-group">
+                <input type="email" name="email" placeholder="Your Email" required>
+            </div>
+            <div class="form-group">
+                <input type="text" name="subject" placeholder="Subject" required>
+            </div>
+            <div class="form-group">
+                <textarea name="message" placeholder="Message" required></textarea>
+            </div>
+            <button type="submit" class="submit-btn">Send Message</button>
+        </form>
+    </div>
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div class="footer-sections">
+                <a href="index.html">About</a>
+                <a href="projects.html">Projects</a>
+                <a href="services.html">Services</a>
+                <a href="blog.html">Blog</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="footer-social-media">
+                <a href="https://github.com/PWRXNDR" target="_blank" class="social-icon">
+                    <img src="Icons\icons8-github-48.png" alt="GitHub">
+                </a>
+                <a href="https://www.linkedin.com/in/aleksandr-dubranov-394481281/" target="_blank" class="social-icon">
+                    <img src="Icons\icons8-linkedin-48.png" alt="LinkedIn">
+                </a>
+                <a href="https://medium.com/@pwrxndr" target="_blank" class="social-icon">
+                    <img src="Icons\icons8-medium-48.png" alt="Medium">
+                </a>
+                <a href="https://twitter.com/pwrxndr" target="_blank" class="social-icon">
+                    <img src="Icons\icons8-twitter-48.png" alt="Twitter">
+                </a>
+            </div>
+        </div>
+        <div class="footer-copy">
+            &copy; 2024 <span>X&R</span>. All rights reserved.
+        </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanta/0.5.24/vanta.fog.min.js"></script>
+    <script type="text/javascript">
+        VANTA.FOG({
+            el: "#vanta-canvas",
+            mouseControls: true,
+            touchControls: true,
+            gyroControls: false,
+            minHeight: 200.00,
+            minWidth: 200.00,
+            highlightColor: 0xc896a,
+            midtoneColor: 0x2a203b,
+            lowlightColor: 0x6a00e8,
+            baseColor: 0x0,
+            blurFactor: 0.90,
+            speed: 0.20,
+            zoom: 0.40
+        })
+    </script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="js/particles.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        VANTA.FOG({
+            el: "#vanta-canvas-2",
+            mouseControls: true,
+            touchControls: true,
+            gyroControls: false,
+            minHeight: 200.00,
+            minWidth: 200.00,
+            highlightColor: 0x0,
+            midtoneColor: 0x49297e,
+            lowlightColor: 0x7f472,
+            baseColor: 0x0,
+            blurFactor: 0.90,
+            speed: 0.20,
+            zoom: 0.40
+        })
+    </script>
+    <script src="js/particles2.js" type="text/javascript"></script>
+</body>
+</html>

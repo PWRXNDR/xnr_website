@@ -1,0 +1,463 @@
+@font-face {
+    font-family: 'ALTA'; /* Name you'll use to refer to the font in CSS */
+    src: url('Alta Font\webfontkit-20240307-122936\alta_regular-webfont.woff2') format('woff2'), /* Path to the woff2 font file */
+    url("Alta Font\webfontkit-20240307-122936\alta_regular-webfont.woff") format('woff'); /* Path to the woff font file */
+    font-weight: normal; /* or 400, 700, etc. */
+    font-style: normal; /* or italic */
+}
+
+@font-face {
+    font-family: 'ALTA-light';
+    src: url("Alta Font\webfontkit-20240307-124928\alta_light-webfont.woff2") format('woff2'), url("Alta Font\webfontkit-20240307-124928\alta_light-webfont.woff") format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ALTA-caption';
+    src: url('Alta Font\webfontkit-20240307-125047\alta_caption-webfont.woff2') format('woff2'), url('Alta Font\webfontkit-20240307-125047\alta_caption-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root {
+    --glow-color: #B9EAF8;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    padding: 5;
+    margin: 5;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    min-height: 100vh;
+    background: rgb(2,0,36);
+    background: rgba(0, 0, 0, 1);
+    margin: 0;
+    padding: 0;
+}
+
+.glowing-btn {
+    position: relative;
+    color: var(--glow-color);
+    cursor: pointer;
+    padding: 0.35em 1em;
+    border: 0.15em solid var(--glow-color);
+    border-radius: 0.45em;
+    background: none;
+    perspective: 2em;
+    font-family: "ALTA";
+    font-size: 1.5em;
+    font-weight: 900;
+    letter-spacing: 0.5em;
+    -webkit-box-shadow: inset 0px 0px 0.5em 0px var(--glow-color), 0px 0px 0.5em 0px var(--glow-color);
+    -moz-box-shadow: inset 0px 0px 0.5em 0px var(--glow-color), 0px 0px 0.5em 0px var(--glow-color);
+    box-shadow: inset 0px 0px 0.5em 0px var(--glow-color), 0px 0px 0.5em 0px var(--glow-color);
+    animation: none;
+    margin-bottom: 2%;
+    margin-left: 2%;
+    margin-top: 2%;
+}
+
+.glowing-txt {
+    float: left;
+    margin-right: -0.6em;
+    -webkit-text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3), 0 0 0.45em var(--glow-color);
+    -moz-text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3), 0 0 0.45em var(--glow-color);
+    text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3), 0 0 0.45em var(--glow-color);
+    animation: none;
+}
+
+.faulty-letter {
+    opacity: 0.5;
+    color: #0EC1F4;
+    animation: none;
+}
+
+.glowing-btn::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0.7;
+    filter: blur(1em);
+    transform: translateY(120%) rotateX(95deg) scale(1, 0.35);
+    background: var(--glow-color);
+    pointer-events: none;
+}
+
+.glowing-btn::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    z-index: -1;
+    background-color: var(--glow-color);
+    box-shadow: 0 0 2em 0.2em var(--glow-color);
+    transition: opacity 100ms linear;
+}
+
+.glowing-btn:hover {
+    color: rgba(0, 0, 0, 0.8);
+    text-shadow: none;
+    animation: none;
+}
+
+    .glowing-btn:hover .glowing-txt {
+        animation: none;
+    }
+
+    .glowing-btn:hover:before {
+        filter: blur(1.5em);
+        opacity: 1;
+    }
+
+    .glowing-btn:hover:after {
+        opacity: 1;
+    }
+
+@media only screen and (max-width: 600px) {
+    .glowing-btn {
+        font-size: 1.2em;
+    }
+}
+
+ul {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-left: -5%;
+}
+
+    ul li {
+        position: relative;
+        list-style: none;
+    }
+
+        ul li a {
+            font-family: 'ALTA-light';
+            font-size: 20px;
+            text-decoration: none;
+            letter-spacing: 1px;
+            line-height: 20px;
+            text-transform: uppercase;
+            color: rgba(255, 255, 255, 0); /* Make text transparent */
+            -webkit-text-stroke: 1px var(--glow-color); /* Apply colored edges */
+            position: relative;
+            overflow: hidden;
+        }
+
+            ul li a::before {
+                content: attr(data-text);
+                position: absolute;
+                left: 0;
+                width: 0;
+                overflow: hidden;
+                transition: 0.5s;
+                white-space: nowrap;
+                color: var(--clr); /* Color for hover effect */
+                -webkit-text-stroke: 1px var(--clr); /* Remove stroke on hover */
+                border-right: 2px solid var(--clr); /* Hide border */
+            }
+
+            ul li a:hover::before {
+                width: 100%;
+                filter: drop-shadow(0 0 25px var(--clr));
+            }
+
+.menu {
+    position: -webkit-sticky; /* For Safari */
+    position: sticky;
+    top: 0; /* Set to the top of the page */
+    background-color: rgba(0,0,0,0); /* Or any color you want */
+    z-index: 9999; /* Ensures it stays on top of other content */
+    display: flex;
+    justify-content: space-around; /* To align menu items in a row */
+    padding: 10px 0; /* Provide some padding */
+}
+
+@media (min-width: 768px) { /* Adjust as per your breakpoint */
+    .menu.sticky {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    ul {
+        margin-left: -20%;
+    }
+
+        ul li a {
+            font-size: 0.9em;
+        }
+}
+
+.menu {
+    transition: all 0.3s; /* Smooth transition for sticky effect */
+    /* rest of your styles */
+}
+
+.background {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+#particles-js {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: -1; /* Behind content */
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+}
+.section-name {
+    position: absolute;
+    bottom: 10px; /* Adjust as needed */
+    left: 50%;
+    transform: translateX(-50%); /* Center horizontally */
+    z-index: 2;
+    color: white; /* Text color */
+    font-weight: bold;
+    text-transform: uppercase;
+    background: none; /* Semi-transparent black background for text */
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+#vanta-canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -100;
+}
+.content {
+    z-index: 2;
+}
+#vanta-canvas-2 {
+    position: absolute;
+    top: 694px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -10;
+    border-top-color: rgba(0,0,0,0);
+}
+#vanta-canvas-3 {
+    position: absolute;
+    top: 1390px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -19;
+}
+#particles-js-2 {
+    position: absolute;
+    top: 695px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Behind content */
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+}
+#particles-js-3 {
+    position: absolute;
+    top: 1390px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Behind content */
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+}
+#particles-js-4 {
+    position: absolute;
+    top: 2085px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Behind content */
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+}
+#vanta-canvas-4 {
+    position: absolute;
+    top: 2085px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -19;
+}
+.vanta-section {
+  position: relative;
+  overflow: hidden;
+  /* Other styles... */
+}
+
+.vanta-section::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+  background: linear-gradient(
+    to bottom,
+    rgba(0,0,0,1) 0%,
+    rgba(0,0,0,0) 10%,
+    rgba(0,0,0,0) 80%,
+    rgba(0,0,0,1) 100%
+  );
+}
+.site-footer {
+    background-color: transparent; /* or any color you prefer */
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin-top: 10%;
+    margin-left: 35%;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.footer-sections a {
+    color: #fff;
+    margin: 10px;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-social-media {
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+.social-icon img {
+    width: 24px; /* or your preferred size */
+    height: auto;
+    margin: 0 10px;
+    margin-left: 20%;
+}
+
+.footer-copy {
+    text-align: right;
+    font-size: 0.8em;
+}
+
+@media (max-width: 600px) {
+    .site-footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-social-media {
+        margin-top: 20px;
+    }
+
+    .footer-copy {
+        margin-top: 20px;
+        text-align: center;
+        width: 100%;
+    }
+}
+.services-header {
+    text-align: center;
+    margin: auto;
+    margin-top: -10%;
+    padding: 20px;
+    font-family: 'ALTA-caption';
+    font-size: 1.5em;
+    color: rgba(185, 234, 248, 0.8);
+    margin-bottom: 10%;
+    display: inline-block;
+    align-items: center;
+}
+
+/* Services Section CSS */
+.services-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.service {
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0 10%;
+    color: white;
+}
+
+.service .service-description {
+    margin-right: auto; /* Pushes the description to the left */
+    margin-left: 5%;
+    color: white;
+}
+
+/* To make text larger for service title */
+.service-title {
+    font-size: 2em; /* Example size, adjust as needed */
+    margin-bottom: 0.5em; /* Space between title and description */
+    color: white;
+}
+
+/* Sub-services descriptions should be closer to the center */
+.service-description {
+    /* Positioning will be closer to the service title but centered towards the middle of the page */
+}
+.service-list {
+    list-style: none; /* Removes the default list styling */
+    padding: 0; /* Removes default padding */
+    margin: auto; /* Aligns list to the center of 'service' */
+    text-align: center; /* Center aligns the text */
+    color: white;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 50%; /* Adjust as needed */
+    margin-left: 20px; /* Spacing between title and description */
+    color: white;
+}
+
+.service-list li {
+    margin-bottom: 0.5em; /* Adds spacing between list items */
+}

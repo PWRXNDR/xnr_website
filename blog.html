@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>X&R Blog</title>
+    <link rel="stylesheet" href="./style_blog.css">
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/swiper@7/swiper-bundle.min.css" />
+</head>
+<body>
+    <div id="vanta-canvas" class="vanta-section"></div>
+    <div id="particles-js"></div>
+    <!-- Logo -->
+    <button class='glowing-btn'><span class='glowing-txt'>X<span class='faulty-letter'>&</span>R</span></button>
+    <nav class="menu">
+        <ul>
+            <li style="--clr:#B9EAF8">
+                <a href="index.html" data-text="&nbsp;About">&nbsp;About&nbsp;</a>
+            </li>
+            <li style="--clr:#67C5F8">
+                <a href="projects.html" data-text="&nbsp;Projects">&nbsp;Projects&nbsp;</a>
+            </li>
+            <li style="--clr:#631FF6">
+                <a href="services.html" data-text="&nbsp;Services">&nbsp;Services&nbsp;</a>
+            </li>
+            <li style="--clr:#0EC1F4">
+                <a href="blog.html" data-text="&nbsp;Blog">&nbsp;Blog&nbsp;</a>
+            </li>
+            <li style="--clr:#06F77D">
+                <a href="contact.html" data-text="&nbsp;Contact">&nbsp;Contact&nbsp;</a>
+            </li>
+        </ul>
+    </nav>
+    <div id="particles-js-2"></div>
+    <div id="vanta-canvas-2" class="vanta-section"></div>
+    <div id="particles-js-3"></div>
+    <div id="vanta-canvas-3" class="vanta-section"></div>
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div class="footer-sections">
+                <a href="index.html">About</a>
+                <a href="projects.html">Projects</a>
+                <a href="services.html">Services</a>
+                <a href="blog.html">Blog</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="footer-social-media">
+                <a href="https://github.com/PWRXNDR" target="_blank" class="social-icon">
+                    <img src="Icons\icons8-github-48.png" alt="GitHub">
+                </a>
+                <a href="https://www.linkedin.com/in/aleksandr-dubranov-394481281/" target="_blank" class="social-icon">
+                    <img src="Icons\icons8-linkedin-48.png" alt="LinkedIn">
+                </a>
+                <a href="https://medium.com/@pwrxndr" target="_blank" class="social-icon">
+                    <img src="Icons\icons8-medium-48.png" alt="Medium">
+                </a>
+                <a href="https://twitter.com/pwrxndr" target="_blank" class="social-icon">
+                    <img src="Icons\icons8-twitter-48.png" alt="Twitter">
+                </a>
+            </div>
+        </div>
+        <div class="footer-copy">
+            &copy; 2024 <span>X&R</span>. All rights reserved.
+        </div>
+    </footer>
+    <div id="particles-js-4"></div>
+    <div id="vanta-canvas-4" class="vanta-section"></div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanta/0.5.24/vanta.fog.min.js"></script>
+    <script type="text/javascript">
+        VANTA.FOG({
+            el: "#vanta-canvas",
+            mouseControls: true,
+            touchControls: true,
+            gyroControls: false,
+            minHeight: 200.00,
+            minWidth: 200.00,
+            highlightColor: 0xe6ff,
+            midtoneColor: 0x0,
+            lowlightColor: 0x0,
+            baseColor: 0x0,
+            blurFactor: 0.90,
+            speed: 0.20,
+            zoom: 0.40
+        })
+    </script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script type="text/javascript">
+        particlesJS("particles-js",
+            {
+                "particles": {
+                    "number": {
+                        "value": 15,
+                        "density": {
+                            "enable": true,
+                            "value_area": 315.08467900748315
+                        }
+                    },
+                    "color": {
+                        "value": ["#b9eaf8", "#67C5F8", "#631FF6", "#0EC1F4"]
+                    },
+                    "shape": {
+                        "type": "circle",
+                        "stroke": {
+                            "width": 3,
+                            "color": "#605e5e"
+                        },
+                        "polygon": {
+                            "nb_sides": 5
+                        },
+                        "image": {
+                            "src": "img/github.svg",
+                            "width": 100,
+                            "height": 100
+                        }
+                    },
+                    "opacity": {
+                        "value": 0.63586565373850474,
+                        "random": true,
+                        "anim": {
+                            "enable": false,
+                            "speed": 1,
+                            "opacity_min": 0.1,
+                            "sync": false
+                        }
+                    },
+                    "size": {
+                        "value": 2.995201919232311,
+                        "random": true,
+                        "anim": {
+                            "enable": false,
+                            "speed": 40,
+                            "size_min": 0.1,
+                            "sync": false
+                        }
+                    },
+                    "line_linked": {
+                        "enable": false,
+                        "distance": 0,
+                        "color": "#ffffff",
+                        "opacity": 0.4,
+                        "width": 1
+                    },
+                    "move": {
+                        "enable": true,
+                        "speed": 0.2,
+                        "direction": "none",
+                        "random": false,
+                        "straight": false,
+                        "out_mode": "bounce",
+                        "bounce": false,
+                        "attract": {
+                            "enable": true,
+                            "rotateX": 159.93602558976417,
+                            "rotateY": 1200
+                        }
+                    }
+                },
+                "interactivity": {
+                    "detect_on": "canvas",
+                    "events": {
+                        "onhover": {
+                            "enable": true,
+                            "mode": "repulse"
+                        },
+                        "onclick": {
+                            "enable": false,
+                            "mode": "push"
+                        },
+                        "resize": true
+                    },
+                    "modes": {
+                        "grab": {
+                            "distance": 400,
+                            "line_linked": {
+                                "opacity": 1
+                            }
+                        },
+                        "bubble": {
+                            "distance": 400,
+                            "size": 40,
+                            "duration": 2,
+                            "opacity": 8,
+                            "speed": 3
+                        },
+                        "repulse": {
+                            "distance": 50,
+                            "duration": 0.4
+                        },
+                        "push": {
+                            "particles_nb": 4
+                        },
+                        "remove": {
+                            "particles_nb": 2
+                        }
+                    }
+                },
+                "retina_detect": true
+            }
+        ); var count_particles, stats, update; stats = new Stats; stats.setMode(0); stats.domElement.style.position = 'absolute'; stats.domElement.style.left = '0px'; stats.domElement.style.top = '0px'; document.body.appendChild(stats.domElement); count_particles = document.querySelector('.js-count-particles'); update = function () { stats.begin(); stats.end(); if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) { count_particles.innerText = window.pJSDom[0].pJS.particles.array.length; } requestAnimationFrame(update); }; requestAnimationFrame(update);;
+    </script>
+    <script type="text/javascript">
+        VANTA.FOG({
+            el: "#vanta-canvas-2",
+            mouseControls: true,
+            touchControls: true,
+            gyroControls: false,
+            minHeight: 200.00,
+            minWidth: 200.00,
+            highlightColor: 0x0,
+            midtoneColor: 0x2c8181,
+            lowlightColor: 0xc3ff,
+            baseColor: 0x0,
+            blurFactor: 0.90,
+            speed: 0.20,
+            zoom: 0.40
+        })
+    </script>
+    <script type="text/javascript">
+        particlesJS("particles-js-2",
+            {
+                "particles": {
+                    "number": {
+                        "value": 10,
+                        "density": {
+                            "enable": true,
+                            "value_area": 315.08467900748315
+                        }
+                    },
+                    "color": {
+                        "value": ["#b9eaf8", "#67C5F8", "#631FF6", "#0EC1F4"]
+                    },
+                    "shape": {
+                        "type": "circle",
+                        "stroke": {
+                            "width": 3,
+                            "color": "#605e5e"
+                        },
+                        "polygon": {
+                            "nb_sides": 5
+                        },
+                        "image": {
+                            "src": "img/github.svg",
+                            "width": 100,
+                            "height": 100
+                        }
+                    },
+                    "opacity": {
+                        "value": 0.63586565373850474,
+                        "random": true,
+                        "anim": {
+                            "enable": false,
+                            "speed": 1,
+                            "opacity_min": 0.1,
+                            "sync": false
+                        }
+                    },
+                    "size": {
+                        "value": 2.995201919232311,
+                        "random": true,
+                        "anim": {
+                            "enable": false,
+                            "speed": 40,
+                            "size_min": 0.1,
+                            "sync": false
+                        }
+                    },
+                    "line_linked": {
+                        "enable": false,
+                        "distance": 0,
+                        "color": "#ffffff",
+                        "opacity": 0.4,
+                        "width": 1
+                    },
+                    "move": {
+                        "enable": true,
+                        "speed": 0.2,
+                        "direction": "none",
+                        "random": false,
+                        "straight": false,
+                        "out_mode": "bounce",
+                        "bounce": false,
+                        "attract": {
+                            "enable": true,
+                            "rotateX": 159.93602558976417,
+                            "rotateY": 1200
+                        }
+                    }
+                },
+                "interactivity": {
+                    "detect_on": "canvas",
+                    "events": {
+                        "onhover": {
+                            "enable": true,
+                            "mode": "repulse"
+                        },
+                        "onclick": {
+                            "enable": false,
+                            "mode": "push"
+                        },
+                        "resize": true
+                    },
+                    "modes": {
+                        "grab": {
+                            "distance": 400,
+                            "line_linked": {
+                                "opacity": 1
+                            }
+                        },
+                        "bubble": {
+                            "distance": 400,
+                            "size": 40,
+                            "duration": 2,
+                            "opacity": 8,
+                            "speed": 3
+                        },
+                        "repulse": {
+                            "distance": 50,
+                            "duration": 0.4
+                        },
+                        "push": {
+                            "particles_nb": 4
+                        },
+                        "remove": {
+                            "particles_nb": 2
+                        }
+                    }
+                },
+                "retina_detect": true
+            }
+        ); var count_particles, stats, update; stats = new Stats; stats.setMode(0); stats.domElement.style.position = 'absolute'; stats.domElement.style.left = '0px'; stats.domElement.style.top = '0px'; document.body.appendChild(stats.domElement); count_particles = document.querySelector('.js-count-particles'); update = function () { stats.begin(); stats.end(); if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) { count_particles.innerText = window.pJSDom[0].pJS.particles.array.length; } requestAnimationFrame(update); }; requestAnimationFrame(update);;
+    </script>
+    <script type="text/javascript">
+        VANTA.FOG({
+            el: "#vanta-canvas-3",
+            mouseControls: true,
+            touchControls: true,
+            gyroControls: false,
+            minHeight: 200.00,
+            minWidth: 200.00,
+            highlightColor: 0x13f7f7,
+            midtoneColor: 0x0,
+            lowlightColor: 0x0,
+            baseColor: 0x0,
+            blurFactor: 0.90,
+            speed: 0.20,
+            zoom: 0.40
+        })
+    </script>
+    <script type="text/javascript">
+        particlesJS("particles-js-3",
+            {
+                "particles": {
+                    "number": {
+                        "value": 12,
+                        "density": {
+                            "enable": true,
+                            "value_area": 315.08467900748315
+                        }
+                    },
+                    "color": {
+                        "value": ["#b9eaf8", "#67C5F8", "#631FF6", "#0EC1F4"]
+                    },
+                    "shape": {
+                        "type": "circle",
+                        "stroke": {
+                            "width": 3,
+                            "color": "#605e5e"
+                        },
+                        "polygon": {
+                            "nb_sides": 5
+                        },
+                        "image": {
+                            "src": "img/github.svg",
+                            "width": 100,
+                            "height": 100
+                        }
+                    },
+                    "opacity": {
+                        "value": 0.63586565373850474,
+                        "random": true,
+                        "anim": {
+                            "enable": false,
+                            "speed": 1,
+                            "opacity_min": 0.1,
+                            "sync": false
+                        }
+                    },
+                    "size": {
+                        "value": 2.995201919232311,
+                        "random": true,
+                        "anim": {
+                            "enable": false,
+                            "speed": 40,
+                            "size_min": 0.1,
+                            "sync": false
+                        }
+                    },
+                    "line_linked": {
+                        "enable": false,
+                        "distance": 0,
+                        "color": "#ffffff",
+                        "opacity": 0.4,
+                        "width": 1
+                    },
+                    "move": {
+                        "enable": true,
+                        "speed": 0.2,
+                        "direction": "none",
+                        "random": false,
+                        "straight": false,
+                        "out_mode": "bounce",
+                        "bounce": false,
+                        "attract": {
+                            "enable": true,
+                            "rotateX": 159.93602558976417,
+                            "rotateY": 1200
+                        }
+                    }
+                },
+                "interactivity": {
+                    "detect_on": "canvas",
+                    "events": {
+                        "onhover": {
+                            "enable": true,
+                            "mode": "repulse"
+                        },
+                        "onclick": {
+                            "enable": false,
+                            "mode": "push"
+                        },
+                        "resize": true
+                    },
+                    "modes": {
+                        "grab": {
+                            "distance": 400,
+                            "line_linked": {
+                                "opacity": 1
+                            }
+                        },
+                        "bubble": {
+                            "distance": 400,
+                            "size": 40,
+                            "duration": 2,
+                            "opacity": 8,
+                            "speed": 3
+                        },
+                        "repulse": {
+                            "distance": 50,
+                            "duration": 0.4
+                        },
+                        "push": {
+                            "particles_nb": 4
+                        },
+                        "remove": {
+                            "particles_nb": 2
+                        }
+                    }
+                },
+                "retina_detect": true
+            }
+        ); var count_particles, stats, update; stats = new Stats; stats.setMode(0); stats.domElement.style.position = 'absolute'; stats.domElement.style.left = '0px'; stats.domElement.style.top = '0px'; document.body.appendChild(stats.domElement); count_particles = document.querySelector('.js-count-particles'); update = function () { stats.begin(); stats.end(); if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) { count_particles.innerText = window.pJSDom[0].pJS.particles.array.length; } requestAnimationFrame(update); }; requestAnimationFrame(update);;
+    </script>
+    <script type="text/javascript">
+        particlesJS("particles-js-4",
+            {
+                "particles": {
+                    "number": {
+                        "value": 8,
+                        "density": {
+                            "enable": true,
+                            "value_area": 315.08467900748315
+                        }
+                    },
+                    "color": {
+                        "value": ["#b9eaf8", "#67C5F8", "#631FF6", "#0EC1F4"]
+                    },
+                    "shape": {
+                        "type": "circle",
+                        "stroke": {
+                            "width": 3,
+                            "color": "#605e5e"
+                        },
+                        "polygon": {
+                            "nb_sides": 5
+                        },
+                        "image": {
+                            "src": "img/github.svg",
+                            "width": 100,
+                            "height": 100
+                        }
+                    },
+                    "opacity": {
+                        "value": 0.63586565373850474,
+                        "random": true,
+                        "anim": {
+                            "enable": false,
+                            "speed": 1,
+                            "opacity_min": 0.1,
+                            "sync": false
+                        }
+                    },
+                    "size": {
+                        "value": 2.995201919232311,
+                        "random": true,
+                        "anim": {
+                            "enable": false,
+                            "speed": 40,
+                            "size_min": 0.1,
+                            "sync": false
+                        }
+                    },
+                    "line_linked": {
+                        "enable": false,
+                        "distance": 0,
+                        "color": "#ffffff",
+                        "opacity": 0.4,
+                        "width": 1
+                    },
+                    "move": {
+                        "enable": true,
+                        "speed": 0.2,
+                        "direction": "none",
+                        "random": false,
+                        "straight": false,
+                        "out_mode": "bounce",
+                        "bounce": false,
+                        "attract": {
+                            "enable": true,
+                            "rotateX": 159.93602558976417,
+                            "rotateY": 1200
+                        }
+                    }
+                },
+                "interactivity": {
+                    "detect_on": "canvas",
+                    "events": {
+                        "onhover": {
+                            "enable": true,
+                            "mode": "repulse"
+                        },
+                        "onclick": {
+                            "enable": false,
+                            "mode": "push"
+                        },
+                        "resize": true
+                    },
+                    "modes": {
+                        "grab": {
+                            "distance": 400,
+                            "line_linked": {
+                                "opacity": 1
+                            }
+                        },
+                        "bubble": {
+                            "distance": 400,
+                            "size": 40,
+                            "duration": 2,
+                            "opacity": 8,
+                            "speed": 3
+                        },
+                        "repulse": {
+                            "distance": 50,
+                            "duration": 0.4
+                        },
+                        "push": {
+                            "particles_nb": 4
+                        },
+                        "remove": {
+                            "particles_nb": 2
+                        }
+                    }
+                },
+                "retina_detect": true
+            }
+        ); var count_particles, stats, update; stats = new Stats; stats.setMode(0); stats.domElement.style.position = 'absolute'; stats.domElement.style.left = '0px'; stats.domElement.style.top = '0px'; document.body.appendChild(stats.domElement); count_particles = document.querySelector('.js-count-particles'); update = function () { stats.begin(); stats.end(); if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) { count_particles.innerText = window.pJSDom[0].pJS.particles.array.length; } requestAnimationFrame(update); }; requestAnimationFrame(update);;
+    </script>
+    <script type="text/javascript">
+        VANTA.FOG({
+            el: "#vanta-canvas-4",
+            mouseControls: true,
+            touchControls: true,
+            gyroControls: false,
+            minHeight: 200.00,
+            minWidth: 200.00,
+            highlightColor: 0x0,
+            midtoneColor: 0x0,
+            lowlightColor: 0xecff,
+            baseColor: 0x0,
+            blurFactor: 0.90,
+            speed: 0.20,
+            zoom: 0.40
+        })
+    </script>
+</body>
+</html>
