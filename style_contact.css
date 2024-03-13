@@ -463,6 +463,7 @@ ul li a:hover::before {
     .site-footer {
         flex-direction: column;
         align-items: center;
+        margin-right: 50%;
     }
 
     .footer-content {
