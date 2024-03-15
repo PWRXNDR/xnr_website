@@ -481,17 +481,25 @@ ul {
 }
 
 .service-list {
-    padding: 0;
+    padding-left: 0;
     margin: 4%; /* Spacing on both sides */
     list-style-type: none;
     color: white;
     list-style-type: none;
     font-size: 1.2em;
     font-family: 'ALTA';
+    text-align: left;
 }
 
 .service-list li {
     margin-bottom: 0.5em; /* Adds spacing between list items */
+    padding-left: 0;
+    position: relative;
+}
+.service-list li .tick {
+    position: absolute;
+    left: -1em;
+    top: 0;
 }
 @keyframes float {
     0%, 100% {
