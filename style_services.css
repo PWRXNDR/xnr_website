@@ -720,3 +720,71 @@ ul {
         /* Adjust the animation and position as needed */
     }
 }
+.contact-form-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    padding: 2em;
+    background: rgba(255, 255, 255, 0.2); /* Semi-transparent background */
+    -webkit-backdrop-filter: blur(10px); /* For Safari */
+    backdrop-filter: blur(10px); /* Standard syntax */
+    border-radius: 10px; /* Rounded corners for the box */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* subtle shadow */
+    max-width: 600px; /* Adjust to desired width */
+    width: 100%; /* Full width on smaller screens */
+    border: 1px solid #ccc; /* Thin border */
+}
+
+.section-heading {
+    text-align: center;
+    color: #fff;
+    font-size: 2em;
+    margin-bottom: 1em;
+}
+
+.form-container {
+    width: 100%;
+}
+
+.contact-form .form-group {
+    margin-bottom: 1em;
+}
+
+    .contact-form .form-group input,
+    .contact-form .form-group textarea {
+        width: 100%;
+        padding: 1em;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        font-size: 1em;
+    }
+
+    .contact-form .form-group textarea {
+        height: 150px; /* Adjust as necessary */
+        resize: vertical; /* Allow vertical resize */
+    }
+
+.submit-btn {
+    width: 100%;
+    background-color: #631FF6;
+    color: white;
+    border: none;
+    padding: 1em;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s;
+}
+
+    .submit-btn:hover {
+        background-color: #7D3FC7;
+    }
+
+@media (max-width: 768px) {
+    .contact-form-section {
+        padding: 1em;
+        margin-top: 1em;
+    }
+}

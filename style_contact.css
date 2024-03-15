@@ -640,21 +640,41 @@ ul li a:hover::before {
 @media (max-width: 768px) {
     .contact-container {
         flex-direction: column;
+        margin: 5vh auto;
+        padding: 20px;
+        align-items: center;
     }
-    
-    .contact-info,
+
+    .contact-info {
+        width: 100%; /* Full width on small screens */
+        padding: 5%;
+        margin-right: 0; /* Remove right margin */
+        margin-bottom: 20px; /* Space between info and form */
+    }
+
     .contact-form {
-        width: 100%;
-        padding-right: 0;
+        width: 100%; /* Full width on small screens */
     }
-    .social-media {
-        margin-left: 15%;
-    }
+
+        .contact-form .form-group input,
+        .contact-form .form-group textarea {
+            padding: 10px;
+            font-size: 14px; /* Slightly smaller font size */
+        }
+
+        .contact-form .form-group textarea {
+            height: 150px; /* Adjust height */
+        }
+
     .submit-btn {
-        padding-right: 10%;
-        margin: auto;
+        font-size: 14px; /* Smaller button font size */
     }
-    .contact-container {
-        margin-right: 20%;
+
+    .email, .email2, .call, .call2 {
+        font-size: 1.5em; /* Adjust font size for smaller screens */
+    }
+
+    .social-media {
+        margin: 20px 0; /* Adjust spacing */
     }
 }
