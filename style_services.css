@@ -727,14 +727,14 @@ ul {
     justify-content: center;
     margin: auto;
     padding: 2em;
-    background: rgba(255, 255, 255, 0.2); /* Semi-transparent background */
+    background: rgba(99, 31, 246, 0.2); /* Semi-transparent background */
     -webkit-backdrop-filter: blur(10px); /* For Safari */
     backdrop-filter: blur(10px); /* Standard syntax */
     border-radius: 10px; /* Rounded corners for the box */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* subtle shadow */
     max-width: 600px; /* Adjust to desired width */
     width: 100%; /* Full width on smaller screens */
-    border: 1px solid #ccc; /* Thin border */
+    border: 1px solid rgba(99, 31, 246, 0.8); /* Thin border */
 }
 
 .section-heading {
