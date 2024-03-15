@@ -303,6 +303,7 @@ ul li a:hover::before {
     }
     .hero-text {
         margin-left: 5%;
+        margin-top: -15%;
     }
     .profile-image {
         margin-left: 15%;

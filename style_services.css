@@ -407,7 +407,7 @@ ul {
     font-family: 'ALTA-caption';
     font-size: 1.5em;
     color: rgba(185, 234, 248, 0.8);
-    margin-bottom: 20%;
+    margin-bottom: 15%;
     display: inline-block;
     align-items: center;
 }
@@ -415,11 +415,11 @@ ul {
 /* Services Section CSS */
 .services-section {
     max-width: 100%; /* Or your preferred max width */
-    margin-bottom: 40%;
+    margin-bottom: 35%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 5%;
+    margin: 10%;
 }
 
 .service {
@@ -439,11 +439,15 @@ ul {
 /* To make text larger for service title */
 .service-title {
     flex: 1; /* Adjust the width of the title area */
-    margin: 0 5% 0 20%; /* Spacing on the left */
+    margin: 0 5% 0 10%; /* Spacing on the left */
     color: white;
     font-size: 2.5em;
     font-family: 'ALTA';
     text-align: left;
+    text-shadow: 2px 2px 4px #67C5F8, /* Blue shadow */
+    -1px -1px 2px #0EC1F4, /* Cyan shadow */
+    1px -1px 2px #631FF6, /* Purple shadow */
+    -1px 1px 2px #7D3FC7;
 }
 .subservices-box1 {
     flex: 1.5;
@@ -475,7 +479,13 @@ ul {
     margin-top: 20px; /* Space above the box */
     z-index: 10;
 }
-.tick {
+.subservices-box1,
+.subservices-box2,
+.subservices-box3 {
+    border: 1px solid rgba(99, 31, 246, 0.8); /* Thin white border */
+    box-shadow: inset 0 2px 4px rgba(0,0,0,0.2); /* Slight inner shadow */
+}
+    .tick {
     left: 0; /* Position the tick to the left of the text */
     color: #7D3FC7; /* Purple color for the tick */
 }
