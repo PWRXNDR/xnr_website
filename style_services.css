@@ -453,6 +453,7 @@ ul {
     border-radius: 10px; /* Rounded corners for the box */
     padding: 20px; /* Space inside the box */
     margin-top: 20px; /* Space above the box */
+    z-index: 10;
 }
 .subservices-box2 {
     flex: 1.5;
@@ -462,6 +463,7 @@ ul {
     border-radius: 10px; /* Rounded corners for the box */
     padding: 20px; /* Space inside the box */
     margin-top: 20px; /* Space above the box */
+    z-index: 10;
 }
 .subservices-box3 {
     flex: 1.5;
@@ -471,6 +473,7 @@ ul {
     border-radius: 10px; /* Rounded corners for the box */
     padding: 20px; /* Space inside the box */
     margin-top: 20px; /* Space above the box */
+    z-index: 10;
 }
 .tick {
     left: 0; /* Position the tick to the left of the text */
@@ -680,8 +683,6 @@ ul {
 }
 @media (max-width: 768px) {
     .ripple-svg-1, .ripple-svg-2, .ripple-svg-3 {
-        width: 150px; /* Smaller width */
-        height: 150px; /* Smaller height */
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
@@ -690,6 +691,7 @@ ul {
     .ripple-and-circle-container {
         width: 150px; /* Match SVG width */
         height: 150px; /* Match SVG height */
+        left: -20%;
         /* Adjust top and right as necessary, or remove them if not needed */
     }
 
