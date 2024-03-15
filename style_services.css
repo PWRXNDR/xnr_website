@@ -407,58 +407,274 @@ ul {
     font-family: 'ALTA-caption';
     font-size: 1.5em;
     color: rgba(185, 234, 248, 0.8);
-    margin-bottom: 10%;
+    margin-bottom: 20%;
     display: inline-block;
     align-items: center;
 }
 
 /* Services Section CSS */
 .services-section {
+    max-width: 100%; /* Or your preferred max width */
+    margin-bottom: 40%;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
+    margin: 5%;
 }
 
 .service {
-    height: 90vh;
     display: flex;
+    justify-content: center; /* Aligns children to the sides */
     align-items: center;
-    justify-content: flex-start;
-    padding: 0 10%;
-    color: white;
+    width: 100%;
+    margin-bottom: 40%;
 }
-
-.service .service-description {
-    margin-right: auto; /* Pushes the description to the left */
-    margin-left: 5%;
-    color: white;
+.service-last {
+    display: flex;
+    justify-content: center; /* Aligns children to the sides */
+    align-items: center;
+    width: 100%;
+    margin-bottom: 5%;
 }
-
 /* To make text larger for service title */
 .service-title {
-    font-size: 2em; /* Example size, adjust as needed */
-    margin-bottom: 0.5em; /* Space between title and description */
+    flex: 1; /* Adjust the width of the title area */
+    margin: 0 5% 0 20%; /* Spacing on the left */
     color: white;
+    font-size: 2.5em;
+    font-family: 'ALTA';
+    text-align: left;
+}
+.subservices-box1 {
+    flex: 1.5;
+    background: rgba(103, 197, 248, 0.2); /* Semi-transparent background */
+    -webkit-backdrop-filter: blur(1px); /* For Safari */
+    backdrop-filter: blur(1px); /* Standard syntax */
+    border-radius: 10px; /* Rounded corners for the box */
+    padding: 20px; /* Space inside the box */
+    margin-top: 20px; /* Space above the box */
+}
+.subservices-box2 {
+    flex: 1.5;
+    background: rgba(127, 17, 224, 0.2); /* Semi-transparent background */
+    -webkit-backdrop-filter: blur(1px); /* For Safari */
+    backdrop-filter: blur(1px); /* Standard syntax */
+    border-radius: 10px; /* Rounded corners for the box */
+    padding: 20px; /* Space inside the box */
+    margin-top: 20px; /* Space above the box */
+}
+.subservices-box3 {
+    flex: 1.5;
+    background: rgba(14, 193, 244, 0.2); /* Semi-transparent background */
+    -webkit-backdrop-filter: blur(1px); /* For Safari */
+    backdrop-filter: blur(1px); /* Standard syntax */
+    border-radius: 10px; /* Rounded corners for the box */
+    padding: 20px; /* Space inside the box */
+    margin-top: 20px; /* Space above the box */
+}
+.tick {
+    left: 0; /* Position the tick to the left of the text */
+    color: #7D3FC7; /* Purple color for the tick */
 }
 
-/* Sub-services descriptions should be closer to the center */
-.service-description {
-    /* Positioning will be closer to the service title but centered towards the middle of the page */
-}
 .service-list {
-    list-style: none; /* Removes the default list styling */
-    padding: 0; /* Removes default padding */
-    margin: auto; /* Aligns list to the center of 'service' */
-    text-align: center; /* Center aligns the text */
+    padding: 0;
+    margin: 4%; /* Spacing on both sides */
+    list-style-type: none;
     color: white;
-    justify-content: center;
-    display: flex;
-    flex-wrap: wrap;
-    max-width: 50%; /* Adjust as needed */
-    margin-left: 20px; /* Spacing between title and description */
-    color: white;
+    list-style-type: none;
+    font-size: 1.2em;
+    font-family: 'ALTA';
 }
 
 .service-list li {
     margin-bottom: 0.5em; /* Adds spacing between list items */
+}
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+.floating-circle-1 {
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    width: 100px;
+    height: 100px;
+    background-color: #67C5F8;
+    border-radius: 50%;
+    opacity: 1;
+    animation: float 4s ease-in-out infinite;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+}
+.floating-circle-2 {
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    width: 100px;
+    height: 100px;
+    background-color: #631FF6;
+    border-radius: 50%;
+    opacity: 1;
+    animation: float 4s ease-in-out infinite;
+    transform: translate(-50%, -50%);
+    z-index: 10; /* Ensure it's above the SVG */
+}
+.floating-circle-3 {
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    width: 100px;
+    height: 100px;
+    background-color: #0EC1F4;
+    border-radius: 50%;
+    opacity: 1;
+    animation: float 4s ease-in-out infinite;
+    transform: translate(-50%, -50%);
+    z-index: 10; /* Ensure it's above the SVG */
+}
+    /* Additional style for aesthetic glow like in the screenshot */
+    .floating-circle-1::after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 100%;
+        height: 100%;
+        background-color: currentColor;
+        border-radius: 50%;
+        transform: translate(-50%, -50%);
+        filter: blur(8px);
+    }
+    .floating-circle-2::after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 100%;
+        height: 100%;
+        background-color: currentColor;
+        border-radius: 50%;
+        transform: translate(-50%, -50%);
+        filter: blur(8px);
+    }
+    .floating-circle-3::after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 100%;
+        height: 100%;
+        background-color: currentColor;
+        border-radius: 50%;
+        transform: translate(-50%, -50%);
+        filter: blur(8px);
+    }
+@media (max-width: 768px) {
+    .service {
+        flex-direction: column;
+        text-align: center;
+        margin-bottom: 10%;
+    }
+    .service-last {
+        flex-direction: column;
+        text-align: center;
+        margin-bottom: 10%;
+    }
+
+    .service-title,
+    .service-list,
+    .floating-circle-1
+    .floating-circle-2
+    .floating-circle-3 {
+        flex-basis: auto;
+        margin: 10px 0; /* Add some vertical space between elements */
+    }
+
+    .floating-circle-1 {
+        align-self: center; /* Center the circle */
+        margin-top: 20px;
+    }
+    .floating-circle-2 {
+        align-self: center; /* Center the circle */
+        margin-top: 20px;
+    }
+    .floating-circle-3 {
+        align-self: center; /* Center the circle */
+        margin-top: 20px;
+    }
+}
+.ripple-svg-1 {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    fill: none;
+    stroke: #67C5F8;
+    stroke-width: 0.5;
+    stroke-opacity: 0.15;
+}
+.ripple-svg-2 {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    fill: none;
+    stroke: #7D3FC7;
+    stroke-width: 0.5;
+    stroke-opacity: 0.5;
+}
+.ripple-svg-3 {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    fill: none;
+    stroke: #0EC1F4;
+    stroke-width: 0.5;
+    stroke-opacity: 0.5;
+}
+
+.ripple-svg-1 circle {
+    animation: ripple-animation 4s infinite;
+    transform-origin: center;
+}
+.ripple-svg-2 circle {
+    animation: ripple-animation 4s infinite;
+    transform-origin: center;
+}
+.ripple-svg-3 circle {
+    animation: ripple-animation 4s infinite;
+    transform-origin: center;
+}
+
+@keyframes ripple-animation {
+    0%, 100% {
+        stroke-width: 0.5;
+        stroke-opacity: 0.5;
+    }
+    50% {
+        stroke-width: 2;
+        stroke-opacity: 1;
+    }
+}
+.ripple-and-circle-container {
+    position: relative; /* This will be the positioning context for its children */
+    width: 200px; /* Set the width of the ripple effect */
+    height: 200px; /* Set the height of the ripple effect */
+    top: 50%; /* Adjust top position as necessary */
+    right: 5%; /* Adjust right position as necessary */
+    transform: translate(75%, 0%); /* Centering adjustment */
 }

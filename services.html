@@ -5,8 +5,10 @@
     <meta name="viewport"
           content="width=device-width, initial-scale=1">
     <title>X&R Services</title>
+    <meta http-equiv="X-AU-compatible" content="ie=edge">
     <link rel="icon" href="Icons\favicon_io (1)\favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="./style_services.css">
+    <script src="<script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.12.2/lottie.min.js" integrity="sha512-jEnuDt6jfecCjthQAJ+ed0MTVA++5ZKmlUcmDGBv2vUI/REn6FuIdixLNnQT+vKusE2hhTk2is3cFvv5wA+Sgg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>" integrity="sha512-jEnuDt6jfecCjthQAJ+ed0MTVA++5ZKmlUcmDGBv2vUI/REn6FuIdixLNnQT+vKusE2hhTk2is3cFvv5wA+Sgg==" crossorigin="anonymous"></script>
     <link rel="stylesheet"
           href="https://cdn.jsdelivr.net/npm/swiper@7/swiper-bundle.min.css" />
 </head>
@@ -42,38 +44,84 @@
         <!-- First Service -->
         <div class="service">
             <h2 class="service-title">Machine Learning and Data Science</h2>
-            <ul class="service-list">
-                <li>Data Analysis</li>
-                <li>Predictive Modeling</li>
-                <li>Deep Learning</li>
-                <li>Statistical Data Processing</li>
-            </ul>
+            <div class="subservices-box1">
+                <ul class="service-list">
+                    <li><span class="tick">✔</span>Data Analysis</li>
+                    <li><span class="tick">✔</span>Predictive Modeling</li>
+                    <li><span class="tick">✔</span>Deep Learning</li>
+                    <li><span class="tick">✔</span>Statistical Data Processing</li>
+                </ul>
+            </div>
+            <div class="ripple-and-circle-container">
+                <svg class="ripple-svg-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+                    <circle cx="100" cy="100" r="60" />
+                    <circle cx="100" cy="100" r="70" />
+                    <circle cx="100" cy="100" r="80" />
+                    <circle cx="100" cy="100" r="90" />
+                    <circle cx="100" cy="100" r="100" />
+                </svg>
+                <div class="floating-circle-1">
+                    <svg class="inner-circles-svg">
+                        <!-- Smaller circles inside the main circle -->
+                        <circle cx="50" cy="50" r="10" />
+                        <circle cx="50" cy="50" r="20" />
+                        <!-- You can add more or adjust as needed -->
+                    </svg>
+                </div>
+            </div>
         </div>
 
-        <!-- Second Service -->
-        <div class="service">
-            <h2 class="service-title">Web Development Services</h2>
-            <ul class="service-list">
-                <li>Full-stack Development</li>
-                <li>Responsive Design</li>
-                <li>Modern Web Applications</li>
-            </ul>
+            <!-- Second Service -->
+            <div class="service">
+                <h2 class="service-title">Web Development Services</h2>
+                <div class="subservices-box2">
+                    <ul class="service-list">
+                        <li><span class="tick">✔</span>Full-Stack Development</li>
+                        <li><span class="tick">✔</span>Modern Applications</li>
+                        <li><span class="tick">✔</span>SEO Optimization</li>
+                        <li><span class="tick">✔</span>Responsive Design</li>
+                    </ul>
+                </div>
+                <div class="ripple-and-circle-container">
+                    <svg class="ripple-svg-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+                        <circle cx="100" cy="100" r="60" />
+                        <circle cx="100" cy="100" r="70" />
+                        <circle cx="100" cy="100" r="80" />
+                        <circle cx="100" cy="100" r="90" />
+                        <circle cx="100" cy="100" r="100" />
+                    </svg>
+                    <div class="floating-circle-2"></div>
+                </div>
+            </div>
+            <!-- Third Service -->
+            <div class="service-last">
+                <h2 class="service-title">Business Analytics & Product Management</h2>
+                <div class="subservices-box3">
+                    <ul class="service-list">
+                        <li><span class="tick">✔</span>Data Analysis</li>
+                        <li><span class="tick">✔</span>Predictive Modeling</li>
+                        <li><span class="tick">✔</span>Deep Learning</li>
+                        <li><span class="tick">✔</span>Statistical Data Processing</li>
+                    </ul>
+                </div>
+                <div class="ripple-and-circle-container">
+                    <svg class="ripple-svg-3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+                        <circle cx="100" cy="100" r="60" />
+                        <circle cx="100" cy="100" r="70" />
+                        <circle cx="100" cy="100" r="80" />
+                        <circle cx="100" cy="100" r="90" />
+                        <circle cx="100" cy="100" r="100" />
+                    </svg>
+                    <div class="floating-circle-3"></div>
+                </div>
+            </div>
         </div>
-
-        <!-- Third Service -->
-        <div class="service">
-            <h2 class="service-title">Business Intelligence & Product Management</h2>
-            <ul class="service-list">
-                <li>Workout Plans</li>
-                <li>Dietary Guidance</li>
-                <li>Fitness Coaching</li>
-            </ul>
-        </div>
-    </div>
     <div id="particles-js-2"></div>
     <div id="vanta-canvas-2" class="vanta-section"></div>
     <div id="particles-js-3"></div>
     <div id="vanta-canvas-3" class="vanta-section"></div>
+    <div id="particles-js-4"></div>
+    <div id="vanta-canvas-4" class="vanta-section"></div>
     <footer class="site-footer">
         <div class="footer-content">
             <div class="footer-sections">
@@ -102,6 +150,7 @@
             &copy; 2024 <span>X&R</span>. All rights reserved.
         </div>
     </footer>
+    <script src="js/floating_icons.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vanta/0.5.24/vanta.fog.min.js"></script>
     <script type="text/javascript">
@@ -159,5 +208,23 @@
         })
     </script>
     <script src="js/particles3.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        VANTA.FOG({
+            el: "#vanta-canvas-4",
+            mouseControls: true,
+            touchControls: true,
+            gyroControls: false,
+            minHeight: 200.00,
+            minWidth: 200.00,
+            highlightColor: 0x553789,
+            midtoneColor: 0x1d3577,
+            lowlightColor: 0x0,
+            baseColor: 0x0,
+            blurFactor: 0.90,
+            speed: 0.20,
+            zoom: 0.40
+        })
+    </script>
+    <script src="js/particles4.js" type="text/javascript"></script>
 </body>
 </html>
