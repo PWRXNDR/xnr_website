@@ -678,3 +678,25 @@ ul {
     right: 5%; /* Adjust right position as necessary */
     transform: translate(75%, 0%); /* Centering adjustment */
 }
+@media (max-width: 768px) {
+    .ripple-svg-1, .ripple-svg-2, .ripple-svg-3 {
+        width: 150px; /* Smaller width */
+        height: 150px; /* Smaller height */
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .ripple-and-circle-container {
+        width: 150px; /* Match SVG width */
+        height: 150px; /* Match SVG height */
+        /* Adjust top and right as necessary, or remove them if not needed */
+    }
+
+    /* Adjust the floating circles as well for smaller screens */
+    .floating-circle-1, .floating-circle-2, .floating-circle-3 {
+        width: 80px; /* Smaller circle */
+        height: 80px; /* Smaller circle */
+        /* Adjust the animation and position as needed */
+    }
+}
