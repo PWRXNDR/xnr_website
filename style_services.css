@@ -533,6 +533,7 @@ ul {
     animation: float 4s ease-in-out infinite;
     transform: translate(-50%, -50%);
     z-index: 10;
+    transition: transform 0.3s, box-shadow 0.3s;
 }
 .floating-circle-2 {
     position: absolute;
@@ -546,6 +547,7 @@ ul {
     animation: float 4s ease-in-out infinite;
     transform: translate(-50%, -50%);
     z-index: 10; /* Ensure it's above the SVG */
+    transition: transform 0.3s, box-shadow 0.3s;
 }
 .floating-circle-3 {
     position: absolute;
@@ -559,6 +561,16 @@ ul {
     animation: float 4s ease-in-out infinite;
     transform: translate(-50%, -50%);
     z-index: 10; /* Ensure it's above the SVG */
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.floating-circle-1:hover {
+    box-shadow: 0 0 15px rgba(103, 197, 248, 0.8); /* add a glow effect */
+}
+.floating-circle-2:hover {
+    box-shadow: 0 0 15px rgba(99, 31, 246, 0.8); /* add a glow effect */
+}
+.floating-circle-3:hover {
+    box-shadow: 0 0 15px rgba(14, 193, 244, 0.8); /* add a glow effect */
 }
     /* Additional style for aesthetic glow like in the screenshot */
     .floating-circle-1::after {
