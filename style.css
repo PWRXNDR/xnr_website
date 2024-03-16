@@ -1,9 +1,9 @@
 @font-face {
-    font-family: 'ALTA'; /* Name you'll use to refer to the font in CSS */
-    src: url('Alta Font\webfontkit-20240307-122936\alta_regular-webfont.woff2') format('woff2'), /* Path to the woff2 font file */
-    url("Alta Font\webfontkit-20240307-122936\alta_regular-webfont.woff") format('woff'); /* Path to the woff font file */
-    font-weight: normal; /* or 400, 700, etc. */
-    font-style: normal; /* or italic */
+    font-family: 'ALTA'; 
+    src: url('Alta Font\webfontkit-20240307-122936\alta_regular-webfont.woff2') format('woff2'), 
+    url("Alta Font\webfontkit-20240307-122936\alta_regular-webfont.woff") format('woff'); 
+    font-weight: normal; 
+    font-style: normal; 
 }
 @font-face {
     font-family: 'ALTA-light';
@@ -148,8 +148,8 @@ ul li {
         letter-spacing: 1px;
         line-height: 20px;
         text-transform: uppercase;
-        color: rgba(255, 255, 255, 0); /* Make text transparent */
-        -webkit-text-stroke: 1px var(--glow-color); /* Apply colored edges */
+        color: rgba(255, 255, 255, 0); 
+        -webkit-text-stroke: 1px var(--glow-color); 
         position: relative;
         overflow: hidden;
     }
@@ -162,9 +162,9 @@ ul li a::before {
     overflow: hidden;
     transition: 0.5s;
     white-space: nowrap;
-    color: var(--clr); /* Color for hover effect */
-    -webkit-text-stroke: 1px var(--clr); /* Remove stroke on hover */
-    border-right: 2px solid var(--clr); /* Hide border */
+    color: var(--clr); 
+    -webkit-text-stroke: 1px var(--clr); 
+    border-right: 2px solid var(--clr); 
 }
 
 ul li a:hover::before {
@@ -174,23 +174,23 @@ ul li a:hover::before {
 
 .intro-box {
     font-family: 'ALTA-light';
-    width: 60%; /* Adjust the width as needed */
-    margin: 20px auto; /* This centers the box horizontally */
+    width: 60%; 
+    margin: 20px auto;
     margin-right: 20%;
-    padding: 20px; /* Add some padding inside the box */
-    background-color: rgba(0,0,0,0); /* Choose a background color */
-    color: honeydew; /* Text color */
-    text-align: start; /* Center-align the text */
-    margin-top: 0; /* Space above the intro box */
-    margin-bottom: 20px; /* Space below the intro box */
+    padding: 20px; 
+    background-color: rgba(0,0,0,0); 
+    color: honeydew; 
+    text-align: start; 
+    margin-top: 0; 
+    margin-bottom: 20px; 
     display: inline-block;
 }
 .profile-image {
-    display: inline-block; /* Ensures the image is a block-level element */
-    max-width: 350px; /* Adjust the size as needed */
-    height: auto; /* Maintains the aspect ratio of the image */
+    display: inline-block; 
+    max-width: 350px; 
+    height: auto; 
     margin-top: 10%;
-    border-radius: 50%; /* Optional: creates a circular image */
+    border-radius: 50%; 
     border-top: 2px solid #fff;
     margin-left: 37%;
 }
@@ -203,27 +203,27 @@ ul li a:hover::before {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    width: 60%; /* Adjust the width as needed */
-    margin: 20px auto; /* This centers the box horizontally */
+    width: 60%; 
+    margin: 20px auto; 
     margin-right: 20%;
-    padding: 20px; /* Add some padding inside the box */
-    background-color: rgba(0,0,0,0); /* Choose a background color */
-    color: honeydew; /* Text color */
-    text-align: start; /* Center-align the text */
-    margin-top: 10%; /* Space above the intro box */
-    margin-bottom: 20px; /* Space below the intro box */
+    padding: 20px; 
+    background-color: rgba(0,0,0,0); 
+    color: honeydew; 
+    text-align: start; 
+    margin-top: 10%; 
+    margin-bottom: 20px; 
 }
 .menu {
-    position: -webkit-sticky; /* For Safari */
+    position: -webkit-sticky; 
     position: sticky;
-    top: 0; /* Set to the top of the page */
-    background-color: rgba(0,0,0,0); /* Or any color you want */
-    z-index: 9999; /* Ensures it stays on top of other content */
+    top: 0; 
+    background-color: rgba(0,0,0,0); 
+    z-index: 9999; 
     display: flex;
-    justify-content: space-around; /* To align menu items in a row */
-    padding: 10px 0; /* Provide some padding */
+    justify-content: space-around; 
+    padding: 10px 0;
 }
-@media (min-width: 768px) { /* Adjust as per your breakpoint */
+@media (min-width: 768px) { 
     .menu.sticky {
         flex-direction: row;
         justify-content: space-around;
@@ -247,8 +247,7 @@ ul li a:hover::before {
     }
 }
 .menu {
-    transition: all 0.3s; /* Smooth transition for sticky effect */
-    /* rest of your styles */
+    transition: all 0.3s; 
 }
 .background {
     position: relative;
@@ -262,25 +261,25 @@ ul li a:hover::before {
     left: 0;
     width: 100%;
     height: 100vh;
-    z-index: -1; /* Behind content */
+    z-index: -1; 
     background-size: cover;
     background-position: 50% 50%;
     background-repeat: no-repeat;
 }
 .hero-text {
   justify-content: center;
-  text-align: center;/* Center the text */
+  text-align: center;
   margin: auto;
   margin-top: -10%;
-  color: #fff; /* White text color */
-  padding: 50px 20px; /* Padding around the text */
+  color: #fff; 
+  padding: 50px 20px; 
 }
 
 .hero-text h1 {
   font-family: 'ALTA-light';
-  font-size: 0.9em; /* Large font size for the main title */
-  font-weight: lighter; /* Bold font weight */ /* Space below the title */
-  text-transform: uppercase; /* Uppercase text */
+  font-size: 0.9em; 
+  font-weight: lighter; 
+  text-transform: uppercase; 
   color:#0EC1F4;
   text-decoration-color: #fff;
   text-decoration-thickness: auto;
@@ -288,9 +287,9 @@ ul li a:hover::before {
 
     .hero-text h2 {
         font-family: 'ALTA-caption';
-        font-size: 2.5em; /* Slightly smaller font size for the subtitle */
-        font-weight: bold; /* Lighter font weight for subtlety */
-        margin-bottom: 2em; /* Space below the subtitle */
+        font-size: 2.5em; 
+        font-weight: bold; 
+        margin-bottom: 2em; 
         margin-top: -0.3em;
         color: rgba(185, 234, 248, 0.8);
     }
@@ -312,23 +311,23 @@ ul li a:hover::before {
 
 .hero-text p {
   font-family: 'ALTA-light';
-  font-size: 1.25em; /* Larger font size for the paragraph */
-  max-width: 800px; /* Max-width to control the line length */
-  margin: auto; /* Center the paragraph */
-  line-height: 1.6; /* Line height for better readability */
+  font-size: 1.25em; 
+  max-width: 800px; 
+  margin: auto; 
+  line-height: 1.6; 
   margin-bottom: 150px;
   color: honeydew;
 }
 .hero-text h1 {
   /* ... */
-  text-shadow: 0 0 5px rgba(255, 255, 255, 0.1); /* Example glow effect */
+  text-shadow: 0 0 5px rgba(255, 255, 255, 0.1); 
 }
 .icon-container {
     padding-left: 5%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 20px; /* Spacing between frames */
+    gap: 20px;
 }
 .icon-container-2 {
     padding-top: 2%;
@@ -336,7 +335,7 @@ ul li a:hover::before {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 20px; /* Spacing between frames */
+    gap: 20px; 
 }
 .icon-container-3 {
     padding-top: 2%;
@@ -344,18 +343,18 @@ ul li a:hover::before {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 20px; /* Spacing between frames */
+    gap: 20px; 
 }
 
 .icon-frame {
     position: relative;
-    width: 150px; /* Adjust as needed */
-    height: 150px; /* Adjust as needed */
-    background: rgba(127, 17, 224, 0.2); /* Semi-transparent white background */
+    width: 150px; 
+    height: 150px; 
+    background: rgba(127, 17, 224, 0.2); 
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 10px; /* Optional rounded corners */
+    border-radius: 10px; 
 }
 
 .icon-image {
@@ -367,14 +366,14 @@ ul li a:hover::before {
 
 .section-name {
     position: absolute;
-    bottom: 10px; /* Adjust as needed */
+    bottom: 10px; 
     left: 50%;
-    transform: translateX(-50%); /* Center horizontally */
+    transform: translateX(-50%); 
     z-index: 2;
-    color: white; /* Text color */
+    color: #67C5F8; 
     font-weight: bold;
     text-transform: uppercase;
-    background: none; /* Semi-transparent black background for text */
+    background: none; 
     padding: 5px 10px;
     border-radius: 5px;
 }
@@ -384,7 +383,7 @@ ul li a:hover::before {
 
 .icon-frame:hover {
   filter: brightness(120%);
-  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); /* Adjust color and size as needed */
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); 
 }
 
 #vanta-canvas {
@@ -421,7 +420,7 @@ ul li a:hover::before {
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: -1; /* Behind content */
+    z-index: -1; 
     background-size: cover;
     background-position: 50% 50%;
     background-repeat: no-repeat;
@@ -432,7 +431,7 @@ ul li a:hover::before {
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: -1; /* Behind content */
+    z-index: -1; 
     background-size: cover;
     background-position: 50% 50%;
     background-repeat: no-repeat;
@@ -443,7 +442,7 @@ ul li a:hover::before {
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: -1; /* Behind content */
+    z-index: -1; 
     background-size: cover;
     background-position: 50% 50%;
     background-repeat: no-repeat;
@@ -459,7 +458,6 @@ ul li a:hover::before {
 .vanta-section {
   position: relative;
   overflow: hidden;
-  /* Other styles... */
 }
 
 .vanta-section::after {
@@ -479,7 +477,7 @@ ul li a:hover::before {
   );
 }
 .site-footer {
-    background-color: transparent; /* or any color you prefer */
+    background-color: transparent; 
     color: #fff;
     padding: 20px;
     display: flex;
@@ -513,7 +511,7 @@ ul li a:hover::before {
 }
 
 .social-icon img {
-    width: 24px; /* or your preferred size */
+    width: 24px; 
     height: auto;
     margin: 0 10px;
     margin-left: 20%;
