@@ -1,9 +1,9 @@
 @font-face {
-    font-family: 'ALTA'; /* Name you'll use to refer to the font in CSS */
-    src: url('Alta Font\webfontkit-20240307-122936\alta_regular-webfont.woff2') format('woff2'), /* Path to the woff2 font file */
-    url("Alta Font\webfontkit-20240307-122936\alta_regular-webfont.woff") format('woff'); /* Path to the woff font file */
-    font-weight: normal; /* or 400, 700, etc. */
-    font-style: normal; /* or italic */
+    font-family: 'ALTA'; 
+    src: url('Alta Font\webfontkit-20240307-122936\alta_regular-webfont.woff2') format('woff2'), 
+    url("Alta Font\webfontkit-20240307-122936\alta_regular-webfont.woff") format('woff'); 
+    font-weight: normal; 
+    font-style: normal; 
 }
 @font-face {
     font-family: 'ALTA-light';
@@ -154,8 +154,8 @@ ul li {
         letter-spacing: 1px;
         line-height: 20px;
         text-transform: uppercase;
-        color: rgba(255, 255, 255, 0); /* Make text transparent */
-        -webkit-text-stroke: 1px var(--glow-color); /* Apply colored edges */
+        color: rgba(255, 255, 255, 0); 
+        -webkit-text-stroke: 1px var(--glow-color); 
         position: relative;
         overflow: hidden;
     }
@@ -168,9 +168,9 @@ ul li a::before {
     overflow: hidden;
     transition: 0.5s;
     white-space: nowrap;
-    color: var(--clr); /* Color for hover effect */
-    -webkit-text-stroke: 1px var(--clr); /* Remove stroke on hover */
-    border-right: 2px solid var(--clr); /* Hide border */
+    color: var(--clr); 
+    -webkit-text-stroke: 1px var(--clr); 
+    border-right: 2px solid var(--clr); 
 }
 
 ul li a:hover::before {
@@ -178,17 +178,17 @@ ul li a:hover::before {
     filter: drop-shadow(0 0 25px var(--clr));
 }
 .menu {
-    position: -webkit-sticky; /* For Safari */
+    position: -webkit-sticky; 
     position: sticky;
-    top: 0; /* Set to the top of the page */
-    background-color: rgba(0,0,0,0); /* Or any color you want */
-    z-index: 9999; /* Ensures it stays on top of other content */
+    top: 0; 
+    background-color: rgba(0,0,0,0); 
+    z-index: 9999; 
     display: flex;
-    justify-content: space-around; /* To align menu items in a row */
-    padding: 10px 0; /* Provide some padding */
+    justify-content: space-around; 
+    padding: 10px 0; 
 }
 
-@media (min-width: 768px) { /* Adjust as per your breakpoint */
+@media (min-width: 768px) { 
     .menu.sticky {
         flex-direction: row;
         justify-content: space-around;
@@ -206,8 +206,7 @@ ul li a:hover::before {
 }
 
 .menu {
-    transition: all 0.3s; /* Smooth transition for sticky effect */
-    /* rest of your styles */
+    transition: all 0.3s;
 }
 .background {
     position: relative;
@@ -221,108 +220,11 @@ ul li a:hover::before {
     left: 0;
     width: 100%;
     height: 100vh;
-    z-index: -1; /* Behind content */
+    z-index: -1; 
     background-size: cover;
     background-position: 50% 50%;
     background-repeat: no-repeat;
 }
-.hero-text {
-  justify-content: center;
-  text-align: center;/* Center the text */
-  margin: auto;
-  margin-top: -200px;
-  color: #fff; /* White text color */
-  padding: 50px 20px; /* Padding around the text */
-}
-
-.hero-text h1 {
-  font-family: 'ALTA-light';
-  font-size: 0.9em; /* Large font size for the main title */
-  font-weight: lighter; /* Bold font weight */ /* Space below the title */
-  text-transform: uppercase; /* Uppercase text */
-  color:#0EC1F4;
-  text-decoration-color: #fff;
-  text-decoration-thickness: auto;
-}
-
-    .hero-text h2 {
-        font-family: 'ALTA-caption';
-        font-size: 2.5em; /* Slightly smaller font size for the subtitle */
-        font-weight: bold; /* Lighter font weight for subtlety */
-        margin-bottom: 2em; /* Space below the subtitle */
-        margin-top: -0.3em;
-        color: rgba(185, 234, 248, 0.8);
-    }
-
-.hero-text p {
-  font-family: 'ALTA-light';
-  font-size: 1.25em; /* Larger font size for the paragraph */
-  max-width: 800px; /* Max-width to control the line length */
-  margin: auto; /* Center the paragraph */
-  line-height: 1.6; /* Line height for better readability */
-  margin-bottom: 150px;
-  color: honeydew;
-}
-.hero-text h1 {
-  /* ... */
-  text-shadow: 0 0 5px rgba(255, 255, 255, 0.1); /* Example glow effect */
-}
-.icon-container {
-    padding-left: 5%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px; /* Spacing between frames */
-}
-.icon-container-2 {
-    padding-top: 2%;
-    padding-left: 5%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px; /* Spacing between frames */
-}
-.icon-container-3 {
-    padding-top: 2%;
-    padding-left: 5%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px; /* Spacing between frames */
-}
-
-.icon-frame {
-    position: relative;
-    width: 150px; /* Adjust as needed */
-    height: 150px; /* Adjust as needed */
-    background: rgba(127, 17, 224, 0.2); /* Semi-transparent white background */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 10px; /* Optional rounded corners */
-}
-
-.icon-image {
-    filter: invert(100%);
-    max-width: 50%;
-    max-height: 50%;
-    z-index: 1;
-}
-
-.section-name {
-    position: absolute;
-    bottom: 10px; /* Adjust as needed */
-    left: 50%;
-    transform: translateX(-50%); /* Center horizontally */
-    z-index: 2;
-    color: white; /* Text color */
-    font-weight: bold;
-    text-transform: uppercase;
-    background: none; /* Semi-transparent black background for text */
-    padding: 5px 10px;
-    border-radius: 5px;
-}
-
 #vanta-canvas {
     position: absolute;
     top: 0;
@@ -357,7 +259,7 @@ ul li a:hover::before {
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: -1; /* Behind content */
+    z-index: -1; 
     background-size: cover;
     background-position: 50% 50%;
     background-repeat: no-repeat;
@@ -368,7 +270,7 @@ ul li a:hover::before {
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: -1; /* Behind content */
+    z-index: -1; 
     background-size: cover;
     background-position: 50% 50%;
     background-repeat: no-repeat;
@@ -379,7 +281,7 @@ ul li a:hover::before {
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: -1; /* Behind content */
+    z-index: -1; 
     background-size: cover;
     background-position: 50% 50%;
     background-repeat: no-repeat;
@@ -395,7 +297,6 @@ ul li a:hover::before {
 .vanta-section {
   position: relative;
   overflow: hidden;
-  /* Other styles... */
 }
 
 .vanta-section::after {
@@ -415,7 +316,7 @@ ul li a:hover::before {
   );
 }
 .site-footer {
-    background-color: transparent; /* or any color you prefer */
+    background-color: transparent; 
     color: #fff;
     padding: 20px;
     display: flex;
@@ -448,7 +349,7 @@ ul li a:hover::before {
 }
 
 .social-icon img {
-    width: 24px; /* or your preferred size */
+    width: 24px; 
     height: auto;
     margin: 0 10px;
     margin-left: 20%;
@@ -463,7 +364,7 @@ ul li a:hover::before {
     .site-footer {
         flex-direction: column;
         align-items: center;
-        margin-right: 50%;
+        margin-right: 70%;
     }
 
     .footer-content {
@@ -494,7 +395,7 @@ ul li a:hover::before {
     flex: 1;
     margin: auto;
     padding: 5%;
-    padding-right: 40%; /* Adjust the spacing between the info and the form */
+    padding-right: 40%; 
     background-color: rgba(0, 0, 2, 0.6);
     display: grid;
     grid-template-rows: 1fr;
@@ -530,18 +431,18 @@ ul li a:hover::before {
 }
     .contact-text h1 {
         font-family: 'ALTA-caption';
-        font-size: 3em; /* Slightly smaller font size for the subtitle */
-        font-weight: bold; /* Lighter font weight for subtlety */
-        margin-bottom: 1em; /* Space below the subtitle */
+        font-size: 3em; 
+        font-weight: bold; 
+        margin-bottom: 1em; 
         margin-top: -2em;
         color: rgba(185, 234, 248, 0.8);
     }
 .contact-text p {
     font-family: 'ALTA-light';
-    font-size: 1.5em; /* Larger font size for the paragraph */
-    max-width: 800px; /* Max-width to control the line length */
-    margin: auto; /* Center the paragraph */
-    line-height: 1.6; /* Line height for better readability */
+    font-size: 1.5em; 
+    max-width: 800px; 
+    margin: auto; 
+    line-height: 1.6; 
     margin-bottom: 150px;
     color: honeydew;
 }
@@ -559,18 +460,30 @@ ul li a:hover::before {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
 }
 .Twitter, .LinkedIn, .GitHub, .Medium, .Insta {
     display: inline-block;
-    width: 20vh; /* or any size you want */
-    height: 20vh; /* or any size you want */
-    background-size: contain; /* or '50px 50px' if you want to be explicit */
-    transition: transform 0.3s; /* Optional: for a smooth scale effect on hover */
+    width: 20vh; 
+    height: 20vh; 
+    background-size: contain; 
+    transition: transform 0.3s; 
 }
 
 .Twitter:hover, .LinkedIn:hover, .GitHub:hover, .Medium:hover, .Insta:hover {
     transform: scale(1.1); 
     filter: brightness(115%);
+}
+@media (max-width: 768px) {
+    .social-media {
+        margin-left: 50%;
+        justify-content: center;
+    }
+
+    .Twitter, .LinkedIn, .GitHub, .Medium, .Insta {
+        width: 15vh;
+        height: 15vh;
+    }
 }
 .contact-form .form-group {
     margin-bottom: 15px;
@@ -583,13 +496,13 @@ ul li a:hover::before {
     border: 1px solid #ccc;
     color: black;
     border-radius: 4px;
-    font-size: 16px; /* Larger font size for better readability */
+    font-size: 16px; 
 }
 
 .contact-form .form-group textarea {
-    height: 30vh; /* Larger textarea for more message space */
+    height: 30vh; 
     width: 50vh;
-    resize: none; /* Disable resize */
+    resize: none; 
 }
 @media only screen and (max-width: 768px) {
     .contact-form .form-group input,
@@ -603,7 +516,7 @@ ul li a:hover::before {
     }
 
     .contact-form, .form-group textarea {
-        height: 30vh; /* Larger textarea for more message space */
+        height: 30vh; 
         width: 50vh;
         resize: none;
     }
@@ -629,7 +542,7 @@ ul li a:hover::before {
     padding: 15px 30px;
     border-radius: 4px;
     cursor: pointer;
-    font-size: 18px; /* Larger button text */
+    font-size: 18px; 
     transition: background-color 0.3s;
 }
 
@@ -646,35 +559,30 @@ ul li a:hover::before {
     }
 
     .contact-info {
-        width: 100%; /* Full width on small screens */
+        width: 100%; 
         padding: 5%;
-        margin-right: 0; /* Remove right margin */
-        margin-bottom: 20px; /* Space between info and form */
+        margin-right: 0; 
+        margin-bottom: 20px; 
     }
 
     .contact-form {
-        width: 100%; /* Full width on small screens */
+        width: 100%; 
     }
-
         .contact-form .form-group input,
         .contact-form .form-group textarea {
             padding: 10px;
-            font-size: 14px; /* Slightly smaller font size */
+            font-size: 14px; 
         }
-
         .contact-form .form-group textarea {
-            height: 150px; /* Adjust height */
+            height: 150px; 
         }
-
     .submit-btn {
-        font-size: 14px; /* Smaller button font size */
+        font-size: 14px; 
     }
-
     .email, .email2, .call, .call2 {
-        font-size: 1.5em; /* Adjust font size for smaller screens */
+        font-size: 1.5em; 
     }
-
     .social-media {
-        margin: 20px 0; /* Adjust spacing */
+        margin: 20px 0; 
     }
 }

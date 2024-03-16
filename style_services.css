@@ -1,9 +1,9 @@
 @font-face {
-    font-family: 'ALTA'; /* Name you'll use to refer to the font in CSS */
-    src: url('Alta Font\webfontkit-20240307-122936\alta_regular-webfont.woff2') format('woff2'), /* Path to the woff2 font file */
-    url("Alta Font\webfontkit-20240307-122936\alta_regular-webfont.woff") format('woff'); /* Path to the woff font file */
-    font-weight: normal; /* or 400, 700, etc. */
-    font-style: normal; /* or italic */
+    font-family: 'ALTA'; 
+    src: url('Alta Font\webfontkit-20240307-122936\alta_regular-webfont.woff2') format('woff2'), 
+    url("Alta Font\webfontkit-20240307-122936\alta_regular-webfont.woff") format('woff'); 
+    font-weight: normal; 
+    font-style: normal; 
 }
 
 @font-face {
@@ -153,8 +153,8 @@ ul {
             letter-spacing: 1px;
             line-height: 20px;
             text-transform: uppercase;
-            color: rgba(255, 255, 255, 0); /* Make text transparent */
-            -webkit-text-stroke: 1px var(--glow-color); /* Apply colored edges */
+            color: rgba(255, 255, 255, 0); 
+            -webkit-text-stroke: 1px var(--glow-color); 
             position: relative;
             overflow: hidden;
         }
@@ -167,9 +167,9 @@ ul {
                 overflow: hidden;
                 transition: 0.5s;
                 white-space: nowrap;
-                color: var(--clr); /* Color for hover effect */
-                -webkit-text-stroke: 1px var(--clr); /* Remove stroke on hover */
-                border-right: 2px solid var(--clr); /* Hide border */
+                color: var(--clr); 
+                -webkit-text-stroke: 1px var(--clr); 
+                border-right: 2px solid var(--clr); 
             }
 
             ul li a:hover::before {
@@ -178,17 +178,17 @@ ul {
             }
 
 .menu {
-    position: -webkit-sticky; /* For Safari */
+    position: -webkit-sticky; 
     position: sticky;
-    top: 0; /* Set to the top of the page */
-    background-color: rgba(0,0,0,0); /* Or any color you want */
-    z-index: 9999; /* Ensures it stays on top of other content */
+    top: 0; 
+    background-color: rgba(0,0,0,0); 
+    z-index: 9999; 
     display: flex;
-    justify-content: space-around; /* To align menu items in a row */
-    padding: 10px 0; /* Provide some padding */
+    justify-content: space-around; 
+    padding: 10px 0; 
 }
 
-@media (min-width: 768px) { /* Adjust as per your breakpoint */
+@media (min-width: 768px) { 
     .menu.sticky {
         flex-direction: row;
         justify-content: space-around;
@@ -206,8 +206,7 @@ ul {
 }
 
 .menu {
-    transition: all 0.3s; /* Smooth transition for sticky effect */
-    /* rest of your styles */
+    transition: all 0.3s;
 }
 
 .background {
@@ -222,21 +221,21 @@ ul {
     left: 0;
     width: 100%;
     height: 100vh;
-    z-index: -1; /* Behind content */
+    z-index: -1; 
     background-size: cover;
     background-position: 50% 50%;
     background-repeat: no-repeat;
 }
 .section-name {
     position: absolute;
-    bottom: 10px; /* Adjust as needed */
+    bottom: 10px; 
     left: 50%;
-    transform: translateX(-50%); /* Center horizontally */
+    transform: translateX(-50%); 
     z-index: 2;
-    color: white; /* Text color */
+    color: white; 
     font-weight: bold;
     text-transform: uppercase;
-    background: none; /* Semi-transparent black background for text */
+    background: none; 
     padding: 5px 10px;
     border-radius: 5px;
 }
@@ -275,7 +274,7 @@ ul {
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: -1; /* Behind content */
+    z-index: -1; 
     background-size: cover;
     background-position: 50% 50%;
     background-repeat: no-repeat;
@@ -286,7 +285,7 @@ ul {
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: -1; /* Behind content */
+    z-index: -1; 
     background-size: cover;
     background-position: 50% 50%;
     background-repeat: no-repeat;
@@ -297,7 +296,7 @@ ul {
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: -1; /* Behind content */
+    z-index: -1; 
     background-size: cover;
     background-position: 50% 50%;
     background-repeat: no-repeat;
@@ -313,7 +312,6 @@ ul {
 .vanta-section {
   position: relative;
   overflow: hidden;
-  /* Other styles... */
 }
 
 .vanta-section::after {
@@ -333,7 +331,7 @@ ul {
   );
 }
 .site-footer {
-    background-color: transparent; /* or any color you prefer */
+    background-color: transparent; 
     color: #fff;
     padding: 20px;
     display: flex;
@@ -366,7 +364,7 @@ ul {
 }
 
 .social-icon img {
-    width: 24px; /* or your preferred size */
+    width: 24px; 
     height: auto;
     margin: 0 10px;
     margin-left: 20%;
@@ -381,7 +379,7 @@ ul {
     .site-footer {
         flex-direction: column;
         align-items: center;
-        margin-right: 50%;
+        margin-right: 70%;
     }
 
     .footer-content {
@@ -414,7 +412,7 @@ ul {
 
 /* Services Section CSS */
 .services-section {
-    max-width: 100%; /* Or your preferred max width */
+    max-width: 100%; 
     margin-bottom: 35%;
     display: flex;
     flex-direction: column;
@@ -424,75 +422,74 @@ ul {
 
 .service {
     display: flex;
-    justify-content: center; /* Aligns children to the sides */
+    justify-content: center; 
     align-items: center;
     width: 100%;
     margin-bottom: 40%;
 }
 .service-last {
     display: flex;
-    justify-content: center; /* Aligns children to the sides */
+    justify-content: center; 
     align-items: center;
     width: 100%;
     margin-bottom: 5%;
 }
-/* To make text larger for service title */
 .service-title {
-    flex: 1; /* Adjust the width of the title area */
-    margin: 0 5% 0 10%; /* Spacing on the left */
+    flex: 1; 
+    margin: 0 5% 0 10%; 
     color: white;
     font-size: 2.5em;
     font-family: 'ALTA';
     text-align: left;
-    text-shadow: 2px 2px 4px #67C5F8, /* Blue shadow */
-    -1px -1px 2px #0EC1F4, /* Cyan shadow */
-    1px -1px 2px #631FF6, /* Purple shadow */
+    text-shadow: 2px 2px 4px #67C5F8, 
+    -1px -1px 2px #0EC1F4, 
+    1px -1px 2px #631FF6, 
     -1px 1px 2px #7D3FC7;
 }
 .subservices-box1 {
     flex: 1.5;
-    background: rgba(103, 197, 248, 0.2); /* Semi-transparent background */
-    -webkit-backdrop-filter: blur(1px); /* For Safari */
-    backdrop-filter: blur(1px); /* Standard syntax */
-    border-radius: 10px; /* Rounded corners for the box */
-    padding: 20px; /* Space inside the box */
-    margin-top: 20px; /* Space above the box */
+    background: rgba(103, 197, 248, 0.2); 
+    -webkit-backdrop-filter: blur(1px); 
+    backdrop-filter: blur(1px); 
+    border-radius: 10px; 
+    padding: 20px; 
+    margin-top: 20px; 
     z-index: 10;
 }
 .subservices-box2 {
     flex: 1.5;
-    background: rgba(127, 17, 224, 0.2); /* Semi-transparent background */
-    -webkit-backdrop-filter: blur(1px); /* For Safari */
-    backdrop-filter: blur(1px); /* Standard syntax */
-    border-radius: 10px; /* Rounded corners for the box */
-    padding: 20px; /* Space inside the box */
-    margin-top: 20px; /* Space above the box */
+    background: rgba(127, 17, 224, 0.2); 
+    -webkit-backdrop-filter: blur(1px); 
+    backdrop-filter: blur(1px); 
+    border-radius: 10px; 
+    padding: 20px; 
+    margin-top: 20px; 
     z-index: 10;
 }
 .subservices-box3 {
     flex: 1.5;
-    background: rgba(14, 193, 244, 0.2); /* Semi-transparent background */
-    -webkit-backdrop-filter: blur(1px); /* For Safari */
-    backdrop-filter: blur(1px); /* Standard syntax */
-    border-radius: 10px; /* Rounded corners for the box */
-    padding: 20px; /* Space inside the box */
-    margin-top: 20px; /* Space above the box */
+    background: rgba(14, 193, 244, 0.2); 
+    -webkit-backdrop-filter: blur(1px); 
+    backdrop-filter: blur(1px); 
+    border-radius: 10px; 
+    padding: 20px; 
+    margin-top: 20px; 
     z-index: 10;
 }
 .subservices-box1,
 .subservices-box2,
 .subservices-box3 {
-    border: 1px solid rgba(99, 31, 246, 0.8); /* Thin white border */
-    box-shadow: inset 0 2px 4px rgba(0,0,0,0.2); /* Slight inner shadow */
+    border: 1px solid rgba(99, 31, 246, 0.8); 
+    box-shadow: inset 0 2px 4px rgba(0,0,0,0.2); 
 }
     .tick {
-    left: 0; /* Position the tick to the left of the text */
-    color: #7D3FC7; /* Purple color for the tick */
+    left: 0;
+    color: #7D3FC7; 
 }
 
 .service-list {
     padding-left: 0;
-    margin: 4%; /* Spacing on both sides */
+    margin: 4%; 
     list-style-type: none;
     color: white;
     list-style-type: none;
@@ -502,7 +499,7 @@ ul {
 }
 
 .service-list li {
-    margin-bottom: 0.5em; /* Adds spacing between list items */
+    margin-bottom: 0.5em; 
     padding-left: 0;
     position: relative;
 }
@@ -546,7 +543,7 @@ ul {
     opacity: 1;
     animation: float 4s ease-in-out infinite;
     transform: translate(-50%, -50%);
-    z-index: 10; /* Ensure it's above the SVG */
+    z-index: 10; 
     transition: transform 0.3s, box-shadow 0.3s;
 }
 .floating-circle-3 {
@@ -560,19 +557,18 @@ ul {
     opacity: 1;
     animation: float 4s ease-in-out infinite;
     transform: translate(-50%, -50%);
-    z-index: 10; /* Ensure it's above the SVG */
+    z-index: 10; 
     transition: transform 0.3s, box-shadow 0.3s;
 }
 .floating-circle-1:hover {
-    box-shadow: 0 0 15px rgba(103, 197, 248, 0.8); /* add a glow effect */
+    box-shadow: 0 0 15px rgba(103, 197, 248, 0.8); 
 }
 .floating-circle-2:hover {
-    box-shadow: 0 0 15px rgba(99, 31, 246, 0.8); /* add a glow effect */
+    box-shadow: 0 0 15px rgba(99, 31, 246, 0.8); 
 }
 .floating-circle-3:hover {
-    box-shadow: 0 0 15px rgba(14, 193, 244, 0.8); /* add a glow effect */
+    box-shadow: 0 0 15px rgba(14, 193, 244, 0.8); 
 }
-    /* Additional style for aesthetic glow like in the screenshot */
     .floating-circle-1::after {
         content: '';
         position: absolute;
@@ -627,19 +623,19 @@ ul {
     .floating-circle-2
     .floating-circle-3 {
         flex-basis: auto;
-        margin: 10px 0; /* Add some vertical space between elements */
+        margin: 10px 0; 
     }
 
     .floating-circle-1 {
-        align-self: center; /* Center the circle */
+        align-self: center; 
         margin-top: 20px;
     }
     .floating-circle-2 {
-        align-self: center; /* Center the circle */
+        align-self: center; 
         margin-top: 20px;
     }
     .floating-circle-3 {
-        align-self: center; /* Center the circle */
+        align-self: center; 
         margin-top: 20px;
     }
 }
@@ -654,6 +650,7 @@ ul {
     stroke: #67C5F8;
     stroke-width: 0.5;
     stroke-opacity: 0.15;
+    z-index: -2;
 }
 .ripple-svg-2 {
     width: 200px;
@@ -666,6 +663,7 @@ ul {
     stroke: #7D3FC7;
     stroke-width: 0.5;
     stroke-opacity: 0.5;
+    z-index: -2;
 }
 .ripple-svg-3 {
     width: 200px;
@@ -678,6 +676,7 @@ ul {
     stroke: #0EC1F4;
     stroke-width: 0.5;
     stroke-opacity: 0.5;
+    z-index: -2;
 }
 
 .ripple-svg-1 circle {
@@ -697,39 +696,37 @@ ul {
     0%, 100% {
         stroke-width: 0.5;
         stroke-opacity: 0.5;
+        z-index: -4;
     }
     50% {
         stroke-width: 2;
         stroke-opacity: 1;
+        z-index: -4;
     }
 }
 .ripple-and-circle-container {
-    position: relative; /* This will be the positioning context for its children */
-    width: 200px; /* Set the width of the ripple effect */
-    height: 200px; /* Set the height of the ripple effect */
-    top: 50%; /* Adjust top position as necessary */
-    right: 5%; /* Adjust right position as necessary */
-    transform: translate(75%, 0%); /* Centering adjustment */
+    position: relative; 
+    width: 200px; 
+    height: 200px; 
+    top: 50%; 
+    right: 5%; 
+    transform: translate(75%, 0%); 
 }
 @media (max-width: 768px) {
     .ripple-svg-1, .ripple-svg-2, .ripple-svg-3 {
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
+        z-index: -5;
     }
-
     .ripple-and-circle-container {
-        width: 150px; /* Match SVG width */
-        height: 150px; /* Match SVG height */
+        width: 150px; 
+        height: 150px; 
         left: -20%;
-        /* Adjust top and right as necessary, or remove them if not needed */
     }
-
-    /* Adjust the floating circles as well for smaller screens */
     .floating-circle-1, .floating-circle-2, .floating-circle-3 {
-        width: 80px; /* Smaller circle */
-        height: 80px; /* Smaller circle */
-        /* Adjust the animation and position as needed */
+        width: 80px; 
+        height: 80px;
     }
 }
 .contact-form-section {
@@ -739,14 +736,14 @@ ul {
     justify-content: center;
     margin: auto;
     padding: 2em;
-    background: rgba(99, 31, 246, 0.2); /* Semi-transparent background */
-    -webkit-backdrop-filter: blur(10px); /* For Safari */
-    backdrop-filter: blur(10px); /* Standard syntax */
-    border-radius: 10px; /* Rounded corners for the box */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* subtle shadow */
-    max-width: 600px; /* Adjust to desired width */
-    width: 100%; /* Full width on smaller screens */
-    border: 1px solid rgba(99, 31, 246, 0.8); /* Thin border */
+    background: rgba(99, 31, 246, 0.2); 
+    -webkit-backdrop-filter: blur(10px); 
+    backdrop-filter: blur(10px); 
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    max-width: 600px; 
+    width: 100%; 
+    border: 1px solid rgba(99, 31, 246, 0.8); 
 }
 
 .section-heading {
@@ -774,8 +771,8 @@ ul {
     }
 
     .contact-form .form-group textarea {
-        height: 150px; /* Adjust as necessary */
-        resize: vertical; /* Allow vertical resize */
+        height: 150px; 
+        resize: vertical; 
     }
 
 .submit-btn {
