@@ -1,14 +1,14 @@
 document.addEventListener('DOMContentLoaded', function () {
     function handleCircleClick(event) {
         var serviceName = event.currentTarget.getAttribute('data-service');
-        console.log('Service Name:', serviceName); // Debugging line
+        console.log('Service Name:', serviceName); 
 
         var subjectField = document.getElementById('form-subject');
         if (subjectField) {
             subjectField.value = serviceName;
-            console.log('Subject field updated to:', subjectField.value); // Debugging line
+            console.log('Subject field updated to:', subjectField.value); 
         } else {
-            console.error('Subject field not found'); // Debugging line
+            console.error('Subject field not found');
         }
 
         document.querySelector('.contact-form-section').scrollIntoView({ behavior: 'smooth' });
@@ -50,7 +50,7 @@ document.addEventListener("DOMContentLoaded", function () {
             .then(response => {
                 if (response.ok) {
                     displayMessage('Message Sent!');
-                    form.reset(); // To reset the form fields after submission
+                    form.reset(); 
                 } else {
                     response.json().then(data => {
                         if (Object.hasOwn(data, 'errors')) {
