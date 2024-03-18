@@ -586,3 +586,11 @@ ul li a:hover::before {
         margin: 20px 0; 
     }
 }
+.form-message {
+    color: #4CAF50; /* Success color */
+    margin-top: 15px;
+}
+
+    .form-message.error {
+        color: #f44336; /* Error color */
+    }

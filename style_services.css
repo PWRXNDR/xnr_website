@@ -797,3 +797,11 @@ ul {
         margin-top: 1em;
     }
 }
+.form-message {
+    color: #4CAF50; /* Success color */
+    margin-top: 15px;
+}
+
+    .form-message.error {
+        color: #f44336; /* Error color */
+    }
