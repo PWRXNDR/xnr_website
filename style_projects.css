@@ -1,9 +1,9 @@
 @font-face {
-    font-family: 'ALTA'; /* Name you'll use to refer to the font in CSS */
-    src: url('Alta Font\webfontkit-20240307-122936\alta_regular-webfont.woff2') format('woff2'), /* Path to the woff2 font file */
-    url("Alta Font\webfontkit-20240307-122936\alta_regular-webfont.woff") format('woff'); /* Path to the woff font file */
-    font-weight: normal; /* or 400, 700, etc. */
-    font-style: normal; /* or italic */
+    font-family: 'ALTA'; 
+    src: url('Alta Font\webfontkit-20240307-122936\alta_regular-webfont.woff2') format('woff2'), 
+    url("Alta Font\webfontkit-20240307-122936\alta_regular-webfont.woff") format('woff'); 
+    font-weight: normal; 
+    font-style: normal; 
 }
 
 @font-face {
@@ -153,8 +153,8 @@ ul {
             letter-spacing: 1px;
             line-height: 20px;
             text-transform: uppercase;
-            color: rgba(255, 255, 255, 0); /* Make text transparent */
-            -webkit-text-stroke: 1px var(--glow-color); /* Apply colored edges */
+            color: rgba(255, 255, 255, 0); 
+            -webkit-text-stroke: 1px var(--glow-color); 
             position: relative;
             overflow: hidden;
         }
@@ -167,9 +167,9 @@ ul {
                 overflow: hidden;
                 transition: 0.5s;
                 white-space: nowrap;
-                color: var(--clr); /* Color for hover effect */
-                -webkit-text-stroke: 1px var(--clr); /* Remove stroke on hover */
-                border-right: 2px solid var(--clr); /* Hide border */
+                color: var(--clr); 
+                -webkit-text-stroke: 1px var(--clr); 
+                border-right: 2px solid var(--clr); 
             }
 
             ul li a:hover::before {
@@ -179,17 +179,17 @@ ul {
 
 
 .menu {
-    position: -webkit-sticky; /* For Safari */
+    position: -webkit-sticky; 
     position: sticky;
-    top: 0; /* Set to the top of the page */
-    background-color: rgba(0,0,0,0); /* Or any color you want */
-    z-index: 9999; /* Ensures it stays on top of other content */
+    top: 0; 
+    background-color: rgba(0,0,0,0); 
+    z-index: 9999; 
     display: flex;
-    justify-content: space-around; /* To align menu items in a row */
-    padding: 10px 0; /* Provide some padding */
+    justify-content: space-around; 
+    padding: 10px 0; 
 }
 
-@media (min-width: 768px) { /* Adjust as per your breakpoint */
+@media (min-width: 768px) { 
     .menu.sticky {
         flex-direction: row;
         justify-content: space-around;
@@ -207,8 +207,7 @@ ul {
 }
 
 .menu {
-    transition: all 0.3s; /* Smooth transition for sticky effect */
-    /* rest of your styles */
+    transition: all 0.3s; 
 }
 .background {
     position: relative;
@@ -222,21 +221,21 @@ ul {
     left: 0;
     width: 100%;
     height: 100vh;
-    z-index: -1; /* Behind content */
+    z-index: -1; 
     background-size: cover;
     background-position: 50% 50%;
     background-repeat: no-repeat;
 }
 .section-name {
     position: absolute;
-    bottom: 10px; /* Adjust as needed */
+    bottom: 10px; 
     left: 50%;
-    transform: translateX(-50%); /* Center horizontally */
+    transform: translateX(-50%); 
     z-index: 2;
     color: white; /* Text color */
     font-weight: bold;
     text-transform: uppercase;
-    background: none; /* Semi-transparent black background for text */
+    background: none; 
     padding: 5px 10px;
     border-radius: 5px;
 }
@@ -275,7 +274,7 @@ ul {
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: -1; /* Behind content */
+    z-index: -1; 
     background-size: cover;
     background-position: 50% 50%;
     background-repeat: no-repeat;
@@ -286,7 +285,7 @@ ul {
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: -1; /* Behind content */
+    z-index: -1; 
     background-size: cover;
     background-position: 50% 50%;
     background-repeat: no-repeat;
@@ -297,7 +296,7 @@ ul {
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: -1; /* Behind content */
+    z-index: -1; 
     background-size: cover;
     background-position: 50% 50%;
     background-repeat: no-repeat;
@@ -313,7 +312,6 @@ ul {
 .vanta-section {
   position: relative;
   overflow: hidden;
-  /* Other styles... */
 }
 
 .vanta-section::after {
@@ -333,7 +331,7 @@ ul {
   );
 }
 .site-footer {
-    background-color: transparent; /* or any color you prefer */
+    background-color: transparent; 
     color: #fff;
     padding: 20px;
     display: flex;
@@ -366,7 +364,7 @@ ul {
 }
 
 .social-icon img {
-    width: 24px; /* or your preferred size */
+    width: 24px; 
     height: auto;
     margin: 0 10px;
     margin-left: 20%;
@@ -442,7 +440,7 @@ ul {
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.2);
     overflow: hidden;
-    width: calc(50% - 50px); /* Two columns with gap */
+    width: calc(50% - 50px); 
     margin-bottom: 9%;
     height: 500px;
     display: flex;
@@ -451,53 +449,52 @@ ul {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 .project-box:hover {
-    transform: scale(1.02); /* Slightly increase the size */
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); /* Add a light box-shadow for highlight */
+    transform: scale(1.02); 
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); 
 }
 
 .project-image {
     height: 250px;
     object-fit: cover;
     width: 100%;
-    display: block; /* Removes bottom space under the image */
+    display: block; 
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 }
 
 .project-info {
     padding: 15px;
-    flex-grow: 1; /* This will make the project info section fill the remaining space */
+    flex-grow: 1; 
     display: flex;
     flex-direction: column;
-    justify-content: space-between; /* Aligns content inside project-info */
+    justify-content: space-between;
     color: white;
 }
 
 .project-links img {
-    width: 24px; /* Set your desired size */
+    width: 24px; 
     height: auto;
     margin-right: 10px;
     margin: auto;
 }
 .project-links {
     display: flex;
-    align-items: center; /* Align items vertically */
-    gap: 10px; /* Adjust the space between text and icons as needed */
+    align-items: center; 
+    gap: 10px; 
 }
 .learn-more {
-    font-size: 0.9em; /* Adjust size as needed */
-    color: #ffffff; /* or any other color you prefer */
-    /* Add any additional styles for the "Learn more" text here */
+    font-size: 0.9em; 
+    color: #ffffff; 
 }
 
 @media (max-width: 768px) {
     .project-box {
-        height: auto; /* Height can be auto on smaller screens to maintain aspect ratio */
+        height: auto; 
         width: 250px;
     }
 
     .project-image {
-        height: 200px; /* Smaller fixed height for images on smaller screens */
+        height: 200px; 
     }
     .project-text {
         margin-left: 10%;
@@ -508,11 +505,10 @@ ul {
     text-align: center;
 }
 .project-collab-invite p {
-  /* Style for the paragraph text */
   text-align: center;
   justify-content: center;
   padding: 5%;
-  margin-top: 20px; /* Or any other value */
+  margin-top: 20px; 
   font-family: 'ALTA-light';
   font-size: 2em;
   color: rgba(185, 234, 248, 0.8);
@@ -521,23 +517,21 @@ ul {
 }
 
 .contact-link {
-  /* Style for the contact link */
   display: inline-block;
   font-family: 'ALTA-caption';
-  font-size: 1.3em; /* Make it bigger than the rest of the text */
+  font-size: 1.3em; 
   font-weight: bold;
-  color: rgb(185,234,248); /* Change color to fit your theme */ 
+  color: rgb(185,234,248); 
   background-color: rgba(103, 197, 248, 0.3);
-  padding: 10px 20px; /* Adjust padding to your preference */
-  border-radius: 5px; /* Rounded corners */
+  padding: 10px 20px; 
+  border-radius: 5px; 
   text-decoration: none;
-  transition: transform 0.3s ease, background-color 0.3s ease; /* Smooth transition for hover effect */
+  transition: transform 0.3s ease, background-color 0.3s ease; 
 }
 
 .contact-link:hover {
-  /* Hover effect */
-  transform: scale(1.05); /* Slightly increase size */
-  color: #67C5F8; /* Change text color on hover */
+  transform: scale(1.05); 
+  color: #67C5F8; 
   text-shadow: 0 0 3px rgba(255, 255, 255, 0.5);
   box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
   text-decoration: none;
