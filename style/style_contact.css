@@ -476,7 +476,7 @@ ul li a:hover::before {
 }
 @media (max-width: 768px) {
     .social-media {
-        margin-left: 50%;
+        margin-left: 20%;
         justify-content: center;
     }
 
@@ -581,9 +581,6 @@ ul li a:hover::before {
     }
     .email, .email2, .call, .call2 {
         font-size: 1.5em; 
-    }
-    .social-media {
-        margin: 20px 0; 
     }
 }
 .form-message {
