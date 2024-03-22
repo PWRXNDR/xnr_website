@@ -360,7 +360,7 @@ ul li a:hover::before {
     font-size: 0.8em;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
     .site-footer {
         flex-direction: column;
         align-items: center;
@@ -483,6 +483,9 @@ ul li a:hover::before {
     .Twitter, .LinkedIn, .GitHub, .Medium, .Insta {
         width: 15vh;
         height: 15vh;
+    }
+    .contact-text {
+        margin: 10%;
     }
 }
 .contact-form .form-group {
