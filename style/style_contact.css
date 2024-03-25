@@ -178,8 +178,6 @@ ul li a:hover::before {
     filter: drop-shadow(0 0 25px var(--clr));
 }
 .menu {
-    position: -webkit-sticky; 
-    position: sticky;
     top: 0; 
     background-color: rgba(0,0,0,0); 
     z-index: 9999; 
@@ -187,14 +185,6 @@ ul li a:hover::before {
     justify-content: space-around; 
     padding: 10px 0; 
 }
-
-@media (min-width: 768px) { 
-    .menu.sticky {
-        flex-direction: row;
-        justify-content: space-around;
-    }
-}
-
 @media only screen and (max-width: 600px) {
     ul {
         margin-left: -20%;
