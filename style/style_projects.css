@@ -490,6 +490,12 @@ ul {
     .project-text {
         margin-left: 10%;
     }
+    .project-text h1 {
+        font-size: 2em;
+    }
+    .project-text h2 {
+        font-size: 1.15em;
+    }
 }
 .project-collab-invite {
     margin: auto;
