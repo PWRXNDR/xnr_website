@@ -577,11 +577,19 @@ ul {
 
 @media (max-width: 768px) {
     .project-links {
-        flex-direction: column; 
-        align-items: flex-start; 
+        display: flex;
+        flex-wrap: wrap; /* Allows items to wrap onto the next line */
+        justify-content: start; /* Aligns items to the start of the container */
     }
 
+        .project-links a,
+        .project-links img {
+            margin-right: 3px; /* Adjust if necessary, keeps space between icons */
+        }
+
     .view-button {
-        margin-top: 10px; 
+        order: 1; /* Places the button below the icons */
+        margin-top: 5px; /* Adds some space between the icons and the button */
     }
 }
+
