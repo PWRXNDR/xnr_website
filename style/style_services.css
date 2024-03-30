@@ -416,7 +416,7 @@ ul {
     justify-content: center; 
     align-items: center;
     width: 100%;
-    margin-bottom: 40%;
+    margin-bottom: 25%;
 }
 .service-last {
     display: flex;
@@ -487,6 +487,12 @@ ul {
     font-size: 1.2em;
     font-family: 'ALTA';
     text-align: left;
+}
+.service-list b{
+    font-size: 1.1em;
+}
+.service-list small {
+    color: rgba(185, 234, 248, 1);
 }
 
 .service-list li {
