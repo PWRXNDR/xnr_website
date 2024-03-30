@@ -494,6 +494,11 @@ ul {
 .service-list small {
     color: rgba(185, 234, 248, 1);
 }
+.service-list strong {
+    font-size: 1em;
+    text-transform: uppercase;
+    color: #67C5F8;
+}
 
 .service-list li {
     margin-bottom: 0.5em; 
