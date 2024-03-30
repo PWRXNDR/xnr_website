@@ -533,4 +533,55 @@ ul {
   box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
   text-decoration: none;
 }
+.pagination-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px; 
+    margin-top: 1em; 
+    margin-bottom: 1em; 
+    margin: auto;
+}
 
+.page-link {
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    background-color: rgba(103, 197, 248, 0.5); 
+    color: white; 
+    transition: background-color 0.3s ease; 
+}
+
+    .page-link:hover {
+        background-color: rgba(103, 197, 248, 0.7); 
+    }
+
+    .page-link.active {
+        background-color: rgba(103, 197, 248, 1); 
+    }
+.view-button {
+    padding: 8px 14px;
+    margin-left: 10%; 
+    background-color: #67C5F8; 
+    color: white; 
+    text-decoration: none;
+    border-radius: 5px; 
+    transition: background-color 0.3s ease; 
+    white-space: nowrap; 
+    text-transform: uppercase;
+}
+
+    .view-button:hover {
+        background-color: #631FF6; 
+    }
+
+@media (max-width: 768px) {
+    .project-links {
+        flex-direction: column; 
+        align-items: flex-start; 
+    }
+
+    .view-button {
+        margin-top: 10px; 
+    }
+}
