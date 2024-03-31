@@ -312,34 +312,33 @@ ul li a:hover::before {
 .hero-text h1 {
   text-shadow: 0 0 5px rgba(255, 255, 255, 0.1); 
 }
+.icon-scrolling-wrapper {
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+    max-width:100%;
+}
+@keyframes slideIcons {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
 .icon-container {
-    padding-left: 5%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-}
-.icon-container-2 {
-    padding-top: 2%;
-    padding-left: 5%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px; 
-}
-.icon-container-3 {
-    padding-top: 2%;
-    padding-left: 5%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px; 
+    display: inline-flex;
+    animation: slideIcons 60s linear infinite;
+    padding-left: 20px; /* Maintain your padding as needed */
+    gap: 20px; /* Keep your gap as is */
+    flex-wrap: nowrap;
 }
 
 .icon-frame {
     position: relative;
-    width: 150px; 
-    height: 150px; 
+    width: 175px; 
+    height: 175px; 
     background: rgba(127, 17, 224, 0.2); 
     display: flex;
     align-items: center;
@@ -366,14 +365,6 @@ ul li a:hover::before {
     background: none; 
     padding: 5px 10px;
     border-radius: 5px;
-}
-.icon-frame {
-  transition: filter 0.1s, box-shadow 0.3s;
-}
-
-.icon-frame:hover {
-  filter: brightness(120%);
-  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); 
 }
 
 #vanta-canvas {
@@ -473,7 +464,7 @@ ul li a:hover::before {
     display: flex;
     justify-content: center;
     align-items: flex-end;
-    margin-top: 10%;
+    margin-top: 16%;
     margin-left: 35%;
     margin-bottom: 0;
 }
@@ -543,5 +534,10 @@ ul li a:hover::before {
         padding: 15px; 
         font-size: 0.9em; 
         text-align: justify; 
+    }
+}
+@media (max-width: 768px) {
+    .icon-scrolling-wrapper {
+        margin-bottom: 20%;
     }
 }
