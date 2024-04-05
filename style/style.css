@@ -186,13 +186,13 @@ ul li a:hover::before {
     display: inline-block;
 }
 .profile-image {
-    display: inline-block; 
-    max-width: 350px; 
-    height: auto; 
-    margin-top: 10%;
-    border-radius: 50%; 
+    display: inline-block;
+    max-width: 350px;
+    height: auto;
+    border-radius: 50%;
     border-top: 2px solid #fff;
-    margin-left: 37%;
+    margin: auto;
+    margin-top: 10%;
 }
 .greeting {
     display: flex;
@@ -303,7 +303,7 @@ ul li a:hover::before {
     box-shadow: rgba(0,0,0,0.4);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     .XR_box {
         flex-direction: column-reverse;
         align-items: center;
@@ -333,7 +333,7 @@ ul li a:hover::before {
             transform: none;
             position: relative;
             /* Adjust the width and height to fit within the viewport */
-            max-width: 50%; /* Adjust this value based on how many images you want in a row */
+            max-width: 70%; /* Adjust this value based on how many images you want in a row */
             height: auto;
             margin: -8%; /* Add some space between images */
             box-shadow: none;
@@ -350,7 +350,7 @@ ul li a:hover::before {
 }
 
 
-@media (min-width: 768px) {
+@media (min-width: 767px) {
     .XR_box {
         display: flex;
         align-items: flex-start;
@@ -448,7 +448,7 @@ ul li a:hover::before {
         margin-top: -0.3em;
         color: rgba(185, 234, 248, 0.8);
     }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
     .hero-text h2 {
         font-size: 2em;
     }
@@ -460,7 +460,7 @@ ul li a:hover::before {
         margin-top: -15%;
     }
     .profile-image {
-        margin-left: 18%;
+        margin-left: auto;
     }
 }
 
@@ -667,12 +667,12 @@ ul li a:hover::before {
     font-size: 0.8em;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 1000px) {
     .site-footer {
         flex-direction: column;
         align-items: center;
-        margin-right: 70%;
-        margin-left: 30%;
+        margin: auto;
+        margin-top: 10%;
     }
 
     .footer-content {
