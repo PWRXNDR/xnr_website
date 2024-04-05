@@ -227,14 +227,14 @@ ul li a:hover::before {
 
 .xr-content {
     width: 50%; /* Adjust width as necessary */
-    margin-left: 20%;
+    margin-left: 15%;
     padding-right: 15%; /* Provides spacing between text and images */
 }
 
 .xr-images {
     position: sticky;
     top: 0%; /* Adjust this value based on desired starting position */
-    width: 30%;
+    width: 25%;
     margin-right: 15%;
     display: flex;
     flex-direction: column;
