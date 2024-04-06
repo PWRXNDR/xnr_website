@@ -477,7 +477,12 @@ ul {
     font-size: 0.9em; 
     color: #ffffff; 
 }
-
+@media (max-width: 850px) {
+    .projects-container {
+        margin: auto;
+        margin-top: 15%;
+    }
+}
 @media (max-width: 1100px) {
     .project-box {
         height: auto; 
@@ -487,9 +492,13 @@ ul {
     .project-image {
         height: 200px; 
     }
-    .project-text {
+      .project-text {
+        margin: auto;
+        margin-top: 5%;
         margin-left: 10%;
+        margin-right: 10%;
     }
+
     .project-text h1 {
         font-size: 2em;
     }
