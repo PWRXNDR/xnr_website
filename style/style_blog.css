@@ -353,7 +353,7 @@ ul {
     font-size: 0.8em;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 1000px) {
     .site-footer {
         flex-direction: column;
         align-items: center;
@@ -470,5 +470,12 @@ ul {
     }
     .blog-header {
         font-size: 1.05em;
+    }
+}
+@media (max-width: 850px) {
+    .blog-container {
+        margin: auto;
+        margin-top: 15%;
+        margin-bottom: 15%;
     }
 }
