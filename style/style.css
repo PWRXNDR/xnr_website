@@ -461,6 +461,7 @@ ul li a:hover::before {
     }
     .profile-image {
         margin: auto;
+        margin-top: 10%;
     }
     .about-us h1{
         font-size: 1.8em;
@@ -532,6 +533,15 @@ ul li a:hover::before {
     background: none; 
     padding: 5px 10px;
     border-radius: 5px;
+}
+@media (max-width: 767px) {
+    .icon-frame {
+        width: 125px;
+        height: 125px;
+    }
+    .section-name {
+        font-size: 0.7em;
+    }
 }
 
 #vanta-canvas {
