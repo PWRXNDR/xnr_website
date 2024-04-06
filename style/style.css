@@ -448,7 +448,7 @@ ul li a:hover::before {
         margin-top: -0.3em;
         color: rgba(185, 234, 248, 0.8);
     }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1000px) {
     .hero-text h2 {
         font-size: 2em;
     }
@@ -460,7 +460,10 @@ ul li a:hover::before {
         margin-top: -15%;
     }
     .profile-image {
-        margin-left: auto;
+        margin: auto;
+    }
+    .about-us h1{
+        font-size: 1.8em;
     }
 }
 
