@@ -431,23 +431,59 @@ ul li a:hover::before {
   padding: 50px 20px; 
 }
 
-.hero-text h1 {
-  font-size: 0.9em; 
-  font-weight: lighter; 
-  text-transform: uppercase; 
-  color:#0EC1F4;
-  text-decoration-color: #fff;
-  text-decoration-thickness: auto;
-}
+    .hero-text h1 {
+        font-size: 0.9em;
+        font-weight: lighter;
+        text-transform: uppercase;
+        color: #0EC1F4;
+        text-decoration-color: #fff;
+        text-decoration-thickness: auto;
+        animation-name: focus-in-contract;
+        animation-duration: 1.7s;
+        animation-timing-function: linear;
+    }
 
     .hero-text h2 {
         font-family: 'ALTA-caption';
-        font-size: 2.5em; 
-        font-weight: bold; 
-        margin-bottom: 2em; 
+        font-size: 2.5em;
+        font-weight: bold;
+        margin-bottom: 2em;
         margin-top: -0.3em;
         color: rgba(185, 234, 248, 0.8);
+        animation-name: focus-in-contract;
+        animation-duration: 1.5s;
+        animation-timing-function: linear;
     }
+
+    .hero-text p {
+        font-family: 'ALTA-light';
+        font-size: 1.25em;
+        max-width: 800px;
+        margin: auto;
+        line-height: 1.6;
+        margin-bottom: 150px;
+        color: honeydew;
+        animation-name: focus-in-contract;
+        animation-duration: 2.5s;
+        animation-timing-function: linear;
+    }
+
+    .hero-text h1 {
+        text-shadow: 0 0 5px rgba(255, 255, 255, 0.1);
+    }
+@keyframes focus-in-contract {
+    0% {
+        letter-spacing: var(--letter-spacing-animation);
+        filter: blur(12px);
+        opacity: 0;
+    }
+
+    100% {
+        letter-spacing: 0;
+        filter: blur(0);
+        opacity: 1;
+    }
+}
 @media only screen and (max-width: 1000px) {
     .hero-text h2 {
         font-size: 2em;
@@ -468,18 +504,7 @@ ul li a:hover::before {
     }
 }
 
-.hero-text p {
-  font-family: 'ALTA-light';
-  font-size: 1.25em; 
-  max-width: 800px; 
-  margin: auto; 
-  line-height: 1.6; 
-  margin-bottom: 150px;
-  color: honeydew;
-}
-.hero-text h1 {
-  text-shadow: 0 0 5px rgba(255, 255, 255, 0.1); 
-}
+
 .icon-scrolling-wrapper {
     overflow: hidden;
     white-space: nowrap;
