@@ -131,11 +131,14 @@ body {
     }
 }
 ul {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  margin-left: -5%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-left: -5%;
+    animation-name: focus-in-contract;
+    animation-duration: 3.5s;
+    animation-timing-function: linear;
 }
 ul li {
   position: relative;
