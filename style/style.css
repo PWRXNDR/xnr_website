@@ -137,7 +137,7 @@ ul {
     gap: 20px;
     margin-left: -5%;
     animation-name: focus-in-contract;
-    animation-duration: 3.5s;
+    animation-duration: 2.0s;
     animation-timing-function: linear;
 }
 ul li {
@@ -442,7 +442,7 @@ ul li a:hover::before {
         text-decoration-color: #fff;
         text-decoration-thickness: auto;
         animation-name: focus-in-contract;
-        animation-duration: 1.7s;
+        animation-duration: 1s;
         animation-timing-function: linear;
     }
 
@@ -454,7 +454,7 @@ ul li a:hover::before {
         margin-top: -0.3em;
         color: rgba(185, 234, 248, 0.8);
         animation-name: focus-in-contract;
-        animation-duration: 1.5s;
+        animation-duration: 1s;
         animation-timing-function: linear;
     }
 
