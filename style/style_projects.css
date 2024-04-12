@@ -398,6 +398,9 @@ ul {
     font-family: 'ALTA-caption';
     font-size: 1em;
     color: rgba(185, 234, 248, 0.8);
+    animation-name: focus-in-contract;
+    animation-duration: 1.3s;
+    animation-timing-function: linear;
 }
 .project-text h1 {
     font-family: 'ALTA';
@@ -414,6 +417,19 @@ ul {
     text-decoration-thickness: auto;
     
 }
+@keyframes focus-in-contract {
+    0% {
+        letter-spacing: var(--letter-spacing-animation);
+        filter: blur(12px);
+        opacity: 0;
+    }
+
+    100% {
+        letter-spacing: 0;
+        filter: blur(0);
+        opacity: 1;
+    }
+}
 .projects-container {
     display: flex;
     flex-wrap: wrap;
@@ -423,7 +439,7 @@ ul {
     margin: auto;
     margin-left: 15%;
     margin-right: 15%;
-    margin-top: 15%;
+    margin-top: 20%;
 }
 
 .project-box {

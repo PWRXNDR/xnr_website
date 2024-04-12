@@ -387,6 +387,22 @@ ul {
     margin-bottom: 10%;
     display: inline-block;
     align-items: center;
+    animation-name: focus-in-contract;
+    animation-duration: 1.3s;
+    animation-timing-function: linear;
+}
+@keyframes focus-in-contract {
+    0% {
+        letter-spacing: var(--letter-spacing-animation);
+        filter: blur(12px);
+        opacity: 0;
+    }
+
+    100% {
+        letter-spacing: 0;
+        filter: blur(0);
+        opacity: 1;
+    }
 }
 .blog-container {
     display: flex;

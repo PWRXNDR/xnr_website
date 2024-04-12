@@ -418,7 +418,9 @@ ul li a:hover::before {
     justify-content: center;
     margin: auto;
     margin-top: 0;
-
+    animation-name: focus-in-contract;
+    animation-duration: 1.3s;
+    animation-timing-function: linear;
 }
     .contact-text h1 {
         font-family: 'ALTA-caption';
@@ -452,6 +454,22 @@ ul li a:hover::before {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    animation-name: focus-in-contract;
+    animation-duration: 1.7s;
+    animation-timing-function: linear;
+}
+@keyframes focus-in-contract {
+    0% {
+        letter-spacing: var(--letter-spacing-animation);
+        filter: blur(12px);
+        opacity: 0;
+    }
+
+    100% {
+        letter-spacing: 0;
+        filter: blur(0);
+        opacity: 1;
+    }
 }
 .Twitter, .LinkedIn, .GitHub, .Medium, .Insta {
     display: inline-block;
