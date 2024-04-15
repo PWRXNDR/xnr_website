@@ -533,13 +533,14 @@ ul li a:hover::before {
 
 .icon-frame {
     position: relative;
-    width: 175px; 
-    height: 175px; 
-    background: rgba(127, 17, 224, 0.2); 
+    width: 175px;
+    height: 175px;
+    background: rgba(127, 17, 224, 0.2);
+    backdrop-filter: blur(1.5px);
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 10px; 
+    border-radius: 10px;
 }
 
 .icon-image {
