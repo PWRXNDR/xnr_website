@@ -24,6 +24,28 @@
     --glow-color: #B9EAF8;
 }
 
+/*---------------------------------------------------------------
+    # Custom Scrollbar
+---------------------------------------------------------------*/
+/* Width */
+::-webkit-scrollbar {
+    width: 5px;
+}
+/*Track*/
+::-webkit-scrollbar-track {
+    background: none;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #9c36ff;
+    border-radius: 5px;
+    min-height: 40px;
+}
+    /* Handle on Hover */
+    ::-webkit-scrollbar-thumb:hover {
+        background: #5803e2;
+    }
+
 *,
 *::before,
 *::after {
