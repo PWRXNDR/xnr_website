@@ -459,8 +459,8 @@ ul {
     gap: 20px;
     padding: 20px;
     margin: auto;
-    margin-left: 15%;
-    margin-right: 15%;
+    margin-left: 3%;
+    margin-right: 3%;
     margin-top: 20%;
 }
 
@@ -469,7 +469,7 @@ ul {
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.2);
     overflow: hidden;
-    width: calc(50% - 50px); 
+    width: 30%; 
     margin-bottom: 9%;
     height: 500px;
     display: flex;
